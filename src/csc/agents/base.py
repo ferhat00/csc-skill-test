@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import time
 import traceback
 from abc import ABC, abstractmethod
 from typing import Any
@@ -92,7 +93,7 @@ class BaseAgent(ABC):
         for turn in range(self.max_turns):
             console.print(f"  [dim]Turn {turn + 1}/{self.max_turns}...[/]")
 
-            response = self.client.messages.create(
+            response = self._call_with_retry(
                 model=self.model,
                 system=self.get_system_prompt(),
                 messages=self.conversation,
@@ -171,6 +172,20 @@ class BaseAgent(ABC):
         console.print(f"  [red]Max turns ({self.max_turns}) exhausted[/]")
         self.state.log_event(self.agent_name, "error", "Max turns exhausted")
         raise RuntimeError(f"{self.agent_name} exceeded maximum turns ({self.max_turns})")
+
+    def _call_with_retry(self, **kwargs) -> anthropic.types.Message:
+        """Call the Anthropic API with exponential backoff on rate limit errors."""
+        max_retries = 5
+        delay = 60  # seconds for first retry
+        for attempt in range(max_retries):
+            try:
+                return self.client.messages.create(**kwargs)
+            except anthropic.RateLimitError as e:
+                if attempt == max_retries - 1:
+                    raise
+                console.print(f"  [yellow]Rate limit hit — waiting {delay}s before retry {attempt + 2}/{max_retries}...[/]")
+                time.sleep(delay)
+                delay = min(delay * 2, 300)  # cap at 5 minutes
 
     def _build_context_message(self) -> str:
         """Pull relevant data from SharedState and format as context for the agent."""

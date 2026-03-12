@@ -1,6 +1,6 @@
 [
   {
-    "id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "id": "c60a023d-fcc9-4f7a-8c0a-ec0e6e4d8c7f",
     "name": "US Regional Depot",
     "region": "us",
     "depot_type": "regional",
@@ -13,7 +13,7 @@
     "country": "US"
   },
   {
-    "id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "id": "4efc95af-0271-4f68-946e-f3ed15fb3804",
     "name": "EU Regional Depot",
     "region": "eu",
     "depot_type": "regional",
@@ -31,7 +31,7 @@
     "country": "NL"
   },
   {
-    "id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "id": "daa12942-a504-466a-a5e0-3ba4c95b6946",
     "name": "APAC Regional Depot",
     "region": "apac",
     "depot_type": "regional",
@@ -46,7 +46,7 @@
     "country": "SG"
   },
   {
-    "id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "id": "2d03d3d9-c36e-483a-bcfe-f588168dd3c6",
     "name": "US East Local Depot",
     "region": "us",
     "depot_type": "local",
@@ -59,7 +59,7 @@
     "country": "US"
   },
   {
-    "id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "id": "27ed7329-7c9c-48ee-a66c-43f510f6670f",
     "name": "EU Central Local Depot",
     "region": "eu",
     "depot_type": "local",
@@ -74,7 +74,7 @@
     "country": "DE"
   },
   {
-    "id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "id": "823e0a42-5480-429f-bec8-e7bd75ea3782",
     "name": "APAC East Local Depot",
     "region": "apac",
     "depot_type": "local",
