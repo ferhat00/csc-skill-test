@@ -1,0 +1,26 @@
+[
+  {
+    "id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "name": "Springfield Pilot Plant",
+    "region": "us",
+    "capabilities": [
+      "ds",
+      "dp"
+    ],
+    "equipment_lines": 4,
+    "annual_capacity_kg": 5000.0,
+    "country": "US"
+  },
+  {
+    "id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "name": "Basel Pilot Plant",
+    "region": "eu",
+    "capabilities": [
+      "ds",
+      "dp"
+    ],
+    "equipment_lines": 3,
+    "annual_capacity_kg": 4000.0,
+    "country": "DE"
+  }
+]

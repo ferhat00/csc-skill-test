@@ -1,0 +1,247 @@
+[
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "c35b39f5-431f-4ba1-bde0-3f5c065e92cb",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "387b8dda-c034-4624-8294-554bc9525a1b",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "a8ff05b1-a6f2-42f7-ad7c-0b30724394e0",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "6d3a574a-55b8-4606-9062-c854ea7f273d",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "702dd94d-78f5-4c3f-8cde-ed12df242820",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "4be40ec6-5c60-4b58-a16e-566da0e1a71f",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "83c0cf96-9f4c-4e1a-8d54-2a5ec4bc3b1a",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "b6749679-4eb6-4f7b-9fe9-a2d3fcec13b5",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "6f9a7dea-e599-404a-8bb1-0bd07bb09c05",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "bc314208-0062-4479-bbfa-74cb6dee712c",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "d592547f-e6f8-4135-81ef-146489365efb",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "3b3c8ea8-719f-485c-aaf7-83a4f8ecc3a7",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "418555f2-18aa-4b28-bfdf-4209aaa10207",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "717929c6-9b7b-4b12-be56-5a404f622535",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "a10f9c4c-3172-4c02-988d-7dc2c5c0b269",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "5e2d2bad-4fab-4621-be7c-f1c9625088b0",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "6c530e67-6784-4644-a66d-4eb82fd88d4c",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "8edd04cd-ce1d-40be-ae02-2896580626b5",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "036b6570-2701-4e09-9e75-02db06f098cf",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "018f1796-3226-49bc-89b4-58e767a15d2f",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "b606c399-5335-42c7-b0dd-ac0c3d1eecfc",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "ef37493f-19e3-4ae4-9196-0b16a283fb2d",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "06de3e8c-7cf9-42b8-9d16-f15000d719cc",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "2d0a8f6b-4a34-4a35-9ffb-69f0e6868ebd",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "5838e605-a04f-443e-8e88-ca5e8eb8d5d4",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "79d53b37-b61f-4b7b-a876-957c3ae673ae",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "459be9c8-26c5-4713-8989-86b3730e2aed",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "25e84b79-a17f-43fc-81dc-d5f109d9a17c",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "8eae1f81-b0df-4b3e-82ae-39091f848294",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "29c920a7-f434-4f40-a260-572435f741e4",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "c247f178-cba4-412c-a22a-83f49f1620ef",
+    "changeover_days": 3,
+    "cleaning_validation_required": false
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "c35b39f5-431f-4ba1-bde0-3f5c065e92cb",
+    "changeover_days": 7,
+    "cleaning_validation_required": true
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "a8ff05b1-a6f2-42f7-ad7c-0b30724394e0",
+    "changeover_days": 7,
+    "cleaning_validation_required": true
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "702dd94d-78f5-4c3f-8cde-ed12df242820",
+    "changeover_days": 7,
+    "cleaning_validation_required": true
+  },
+  {
+    "from_material_id": null,
+    "to_material_id": null,
+    "line_id": "83c0cf96-9f4c-4e1a-8d54-2a5ec4bc3b1a",
+    "changeover_days": 7,
+    "cleaning_validation_required": true
+  }
+]

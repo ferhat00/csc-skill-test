@@ -1,0 +1,314 @@
+[
+  {
+    "origin_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "destination_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "lane_type": "plant_to_depot",
+    "lead_time_days": 3,
+    "cost_per_unit": 24.144261444135623,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "destination_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "lane_type": "plant_to_depot",
+    "lead_time_days": 10,
+    "cost_per_unit": 11.731890902252536,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "destination_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "lane_type": "plant_to_depot",
+    "lead_time_days": 10,
+    "cost_per_unit": 6.854916867602958,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "destination_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "lane_type": "plant_to_depot",
+    "lead_time_days": 10,
+    "cost_per_unit": 6.93432753666928,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "destination_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "lane_type": "plant_to_depot",
+    "lead_time_days": 3,
+    "cost_per_unit": 21.949887326949195,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "destination_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "lane_type": "plant_to_depot",
+    "lead_time_days": 10,
+    "cost_per_unit": 17.074520627337822,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "destination_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "lane_type": "depot_to_depot",
+    "lead_time_days": 5,
+    "cost_per_unit": 12.685539279292563,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "destination_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "lane_type": "depot_to_depot",
+    "lead_time_days": 5,
+    "cost_per_unit": 11.756781440325815,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "destination_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "lane_type": "depot_to_depot",
+    "lead_time_days": 5,
+    "cost_per_unit": 9.43473709745641,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "11fa43ad-a7e3-4efd-9f29-3640ad9a9835",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 9.784926111834965,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "3758c43c-d3d3-4207-9c2b-4e7983eec72c",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 5.028275017666828,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "4695cd69-0d21-4455-ba80-8a8ab9ca8aa8",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 6.416325050185816,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "67f7a1b5-56de-4a92-9a49-6d363025a93a",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 8.635237314023959,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "c7372b57-ed4c-48a3-aa38-858c49641f18",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 6.9481580189139684,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 8.893655202486219,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "f5c3e2ce-e234-4bce-b874-2abb1fee36ab",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 6.618817162054096,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "b603efae-614e-4e02-abcf-e60a4df7e99d",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 7.636574689719388,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "0aec8d9b-05fb-43e9-b9ef-2d8d52134477",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 2.3665950692452977,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "destination_id": "5cca2162-0c36-4e8e-a938-580f79a60141",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 3.823186205212375,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "214db0f7-a42e-45b1-a8e3-3032083d8de8",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 4.315103708816857,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "04a68d26-5a25-4e64-9760-0e96748d150c",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 2.63833581538902,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "a69ac146-7b41-4c56-aa9c-d7119a072ccb",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 3.8623270908882414,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 2.808011435277833,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "cf459128-fc3b-449d-9bca-4f3de55a424a",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 4.223788824880737,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "62da3787-0bb7-41f2-8df0-445441c10aca",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 7.0854755541152015,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "96b83f74-5d48-4200-b205-6d52094fa6fb",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 4.918657431760674,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "524e20e0-7334-42dd-8361-a26df035322e",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 4.961447736935061,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "8b7bfc2d-3c6d-4133-9710-557bf27939d9",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 3.6760562461719015,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "destination_id": "c0d24300-a3f1-4d77-b926-cb3715490eb2",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 4.135822576392907,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "1d09622e-f529-4977-bd68-4240d4b5e116",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 9.493236701699953,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "4c756b24-fea8-4525-97f4-2cde81f2d9bb",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 7.184283081972748,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "4fbfc47f-ffda-40d7-aafe-a95c046b2315",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 6.8730480453359055,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "f28810a4-c0ab-4603-bc8a-53e2f68cc379",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 3.369109185584776,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "cc8b4e4b-6795-423e-977b-c7206098ef88",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 7.8330143836027935,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "18890bfc-90c9-462c-b51e-df31057dfb9b",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 3.307219950095427,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 5.035643534061182,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "ff13c7c6-2e18-46e1-8e06-29c6ec934c21",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 9.916186805092762,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "d4ade72b-c786-4f78-9107-41e106bb075e",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 5,
+    "cost_per_unit": 7.119998078832743,
+    "temperature_controlled": true
+  },
+  {
+    "origin_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "destination_id": "e0adc419-3ea8-4c11-ad3c-0fed44ab5df3",
+    "lane_type": "depot_to_site",
+    "lead_time_days": 2,
+    "cost_per_unit": 6.45559795019717,
+    "temperature_controlled": true
+  }
+]

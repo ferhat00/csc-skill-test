@@ -1,0 +1,272 @@
+[
+  {
+    "id": "11fa43ad-a7e3-4efd-9f29-3640ad9a9835",
+    "name": "Boston Clinical Site 1",
+    "region": "us",
+    "country": "US",
+    "city": "Boston",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 44
+  },
+  {
+    "id": "3758c43c-d3d3-4207-9c2b-4e7983eec72c",
+    "name": "Montreal Clinical Site 2",
+    "region": "us",
+    "country": "CA",
+    "city": "Montreal",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 33
+  },
+  {
+    "id": "4695cd69-0d21-4455-ba80-8a8ab9ca8aa8",
+    "name": "San Francisco Clinical Site 3",
+    "region": "us",
+    "country": "US",
+    "city": "San Francisco",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 65
+  },
+  {
+    "id": "67f7a1b5-56de-4a92-9a49-6d363025a93a",
+    "name": "Montreal Clinical Site 4",
+    "region": "us",
+    "country": "CA",
+    "city": "Montreal",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 61
+  },
+  {
+    "id": "c7372b57-ed4c-48a3-aa38-858c49641f18",
+    "name": "Philadelphia Clinical Site 5",
+    "region": "us",
+    "country": "US",
+    "city": "Philadelphia",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 58
+  },
+  {
+    "id": "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+    "name": "Montreal Clinical Site 6",
+    "region": "us",
+    "country": "CA",
+    "city": "Montreal",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 47
+  },
+  {
+    "id": "f5c3e2ce-e234-4bce-b874-2abb1fee36ab",
+    "name": "Houston Clinical Site 7",
+    "region": "us",
+    "country": "US",
+    "city": "Houston",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 43
+  },
+  {
+    "id": "b603efae-614e-4e02-abcf-e60a4df7e99d",
+    "name": "Montreal Clinical Site 8",
+    "region": "us",
+    "country": "CA",
+    "city": "Montreal",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 99
+  },
+  {
+    "id": "0aec8d9b-05fb-43e9-b9ef-2d8d52134477",
+    "name": "Chicago Clinical Site 9",
+    "region": "us",
+    "country": "US",
+    "city": "Chicago",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 41
+  },
+  {
+    "id": "5cca2162-0c36-4e8e-a938-580f79a60141",
+    "name": "Montreal Clinical Site 10",
+    "region": "us",
+    "country": "CA",
+    "city": "Montreal",
+    "assigned_depot_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "max_patients": 84
+  },
+  {
+    "id": "214db0f7-a42e-45b1-a8e3-3032083d8de8",
+    "name": "London Clinical Site 1",
+    "region": "eu",
+    "country": "UK",
+    "city": "London",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 34
+  },
+  {
+    "id": "04a68d26-5a25-4e64-9760-0e96748d150c",
+    "name": "Munich Clinical Site 2",
+    "region": "eu",
+    "country": "DE",
+    "city": "Munich",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 33
+  },
+  {
+    "id": "a69ac146-7b41-4c56-aa9c-d7119a072ccb",
+    "name": "Paris Clinical Site 3",
+    "region": "eu",
+    "country": "FR",
+    "city": "Paris",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 41
+  },
+  {
+    "id": "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+    "name": "Barcelona Clinical Site 4",
+    "region": "eu",
+    "country": "ES",
+    "city": "Barcelona",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 57
+  },
+  {
+    "id": "cf459128-fc3b-449d-9bca-4f3de55a424a",
+    "name": "Milan Clinical Site 5",
+    "region": "eu",
+    "country": "IT",
+    "city": "Milan",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 59
+  },
+  {
+    "id": "62da3787-0bb7-41f2-8df0-445441c10aca",
+    "name": "Amsterdam Clinical Site 6",
+    "region": "eu",
+    "country": "NL",
+    "city": "Amsterdam",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 94
+  },
+  {
+    "id": "96b83f74-5d48-4200-b205-6d52094fa6fb",
+    "name": "London Clinical Site 7",
+    "region": "eu",
+    "country": "UK",
+    "city": "London",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 33
+  },
+  {
+    "id": "524e20e0-7334-42dd-8361-a26df035322e",
+    "name": "Munich Clinical Site 8",
+    "region": "eu",
+    "country": "DE",
+    "city": "Munich",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 55
+  },
+  {
+    "id": "8b7bfc2d-3c6d-4133-9710-557bf27939d9",
+    "name": "Paris Clinical Site 9",
+    "region": "eu",
+    "country": "FR",
+    "city": "Paris",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 99
+  },
+  {
+    "id": "c0d24300-a3f1-4d77-b926-cb3715490eb2",
+    "name": "Barcelona Clinical Site 10",
+    "region": "eu",
+    "country": "ES",
+    "city": "Barcelona",
+    "assigned_depot_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "max_patients": 83
+  },
+  {
+    "id": "1d09622e-f529-4977-bd68-4240d4b5e116",
+    "name": "Sydney Clinical Site 1",
+    "region": "apac",
+    "country": "AU",
+    "city": "Sydney",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 58
+  },
+  {
+    "id": "4c756b24-fea8-4525-97f4-2cde81f2d9bb",
+    "name": "Osaka Clinical Site 2",
+    "region": "apac",
+    "country": "JP",
+    "city": "Osaka",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 87
+  },
+  {
+    "id": "4fbfc47f-ffda-40d7-aafe-a95c046b2315",
+    "name": "Seoul Clinical Site 3",
+    "region": "apac",
+    "country": "KR",
+    "city": "Seoul",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 65
+  },
+  {
+    "id": "f28810a4-c0ab-4603-bc8a-53e2f68cc379",
+    "name": "Singapore Clinical Site 4",
+    "region": "apac",
+    "country": "SG",
+    "city": "Singapore",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 30
+  },
+  {
+    "id": "cc8b4e4b-6795-423e-977b-c7206098ef88",
+    "name": "Sydney Clinical Site 5",
+    "region": "apac",
+    "country": "AU",
+    "city": "Sydney",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 50
+  },
+  {
+    "id": "18890bfc-90c9-462c-b51e-df31057dfb9b",
+    "name": "Osaka Clinical Site 6",
+    "region": "apac",
+    "country": "JP",
+    "city": "Osaka",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 84
+  },
+  {
+    "id": "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+    "name": "Seoul Clinical Site 7",
+    "region": "apac",
+    "country": "KR",
+    "city": "Seoul",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 73
+  },
+  {
+    "id": "ff13c7c6-2e18-46e1-8e06-29c6ec934c21",
+    "name": "Singapore Clinical Site 8",
+    "region": "apac",
+    "country": "SG",
+    "city": "Singapore",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 65
+  },
+  {
+    "id": "d4ade72b-c786-4f78-9107-41e106bb075e",
+    "name": "Sydney Clinical Site 9",
+    "region": "apac",
+    "country": "AU",
+    "city": "Sydney",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 49
+  },
+  {
+    "id": "e0adc419-3ea8-4c11-ad3c-0fed44ab5df3",
+    "name": "Osaka Clinical Site 10",
+    "region": "apac",
+    "country": "JP",
+    "city": "Osaka",
+    "assigned_depot_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "max_patients": 57
+  }
+]

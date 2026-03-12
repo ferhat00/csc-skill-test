@@ -1,0 +1,90 @@
+[
+  {
+    "id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "name": "US Regional Depot",
+    "region": "us",
+    "depot_type": "regional",
+    "packaging_lines": 3,
+    "labeling_lines": 2,
+    "supported_languages": [
+      "en"
+    ],
+    "storage_capacity_pallets": 500,
+    "country": "US"
+  },
+  {
+    "id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "name": "EU Regional Depot",
+    "region": "eu",
+    "depot_type": "regional",
+    "packaging_lines": 4,
+    "labeling_lines": 3,
+    "supported_languages": [
+      "en",
+      "de",
+      "fr",
+      "es",
+      "it",
+      "nl"
+    ],
+    "storage_capacity_pallets": 600,
+    "country": "NL"
+  },
+  {
+    "id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "name": "APAC Regional Depot",
+    "region": "apac",
+    "depot_type": "regional",
+    "packaging_lines": 2,
+    "labeling_lines": 2,
+    "supported_languages": [
+      "en",
+      "ja",
+      "ko"
+    ],
+    "storage_capacity_pallets": 400,
+    "country": "SG"
+  },
+  {
+    "id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "name": "US East Local Depot",
+    "region": "us",
+    "depot_type": "local",
+    "packaging_lines": 1,
+    "labeling_lines": 1,
+    "supported_languages": [
+      "en"
+    ],
+    "storage_capacity_pallets": 200,
+    "country": "US"
+  },
+  {
+    "id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "name": "EU Central Local Depot",
+    "region": "eu",
+    "depot_type": "local",
+    "packaging_lines": 2,
+    "labeling_lines": 2,
+    "supported_languages": [
+      "en",
+      "de",
+      "fr"
+    ],
+    "storage_capacity_pallets": 250,
+    "country": "DE"
+  },
+  {
+    "id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "name": "APAC East Local Depot",
+    "region": "apac",
+    "depot_type": "local",
+    "packaging_lines": 1,
+    "labeling_lines": 1,
+    "supported_languages": [
+      "en",
+      "ja"
+    ],
+    "storage_capacity_pallets": 150,
+    "country": "JP"
+  }
+]

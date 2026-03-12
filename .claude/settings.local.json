@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -name * -type f)",
+      "Bash(pip show:*)",
+      "Bash(for dir:*)",
+      "Bash(do touch:*)",
+      "Bash(done)",
+      "Bash(pip install:*)",
+      "Bash(python -m pip install -e \".[dev]\")",
+      "Bash(python -c \"from csc.models import Trial, DrugSubstance, DemandPlan, SupplyPlan, CapacityCalendar, MaterialCatalog; print\\(''All models import successfully''\\)\")",
+      "Bash(python -c \":*)",
+      "Bash(python -m csc --help)",
+      "Bash(python -c \"from csc.cli import main; main\\([''--help'']\\)\")",
+      "Bash(csc --help)"
+    ]
+  }
+}

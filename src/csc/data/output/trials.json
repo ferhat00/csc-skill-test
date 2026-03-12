@@ -1,0 +1,3821 @@
+[
+  {
+    "id": "7e7fe608-7741-45bb-b501-4cca0733b08a",
+    "name": "Oncology Phase I Study 1",
+    "protocol_number": "ONCO-2026-001",
+    "therapy_area": "oncology",
+    "phase": "phase_i",
+    "arms": [
+      {
+        "id": "9b4a5f34-8135-4cf9-abb1-63b5d0b46b84",
+        "name": "Treatment",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 205.95206659922098,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 198.65100307759337,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 324.5472536652603,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 205.0966434091741,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 333.8343960894162,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 459.12915344099076,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 259.7602020561589,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 187.72830366291333,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 499.0150425980441,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 303.8105174705858,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 136.36376486951755,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 118.84655016989383,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "ccf89241-d94b-4464-b73f-32b978ee31e7"
+      }
+    ],
+    "planned_enrollment": 32,
+    "sites": [
+      "1d09622e-f529-4977-bd68-4240d4b5e116",
+      "f28810a4-c0ab-4603-bc8a-53e2f68cc379"
+    ],
+    "fsfv": "2026-02-06",
+    "lslv": "2027-11-28",
+    "enrollment_duration_months": 16,
+    "treatment_duration_months": 6,
+    "countries": [
+      "AU",
+      "SG"
+    ],
+    "overage_pct": 0.25
+  },
+  {
+    "id": "b08deb8f-87c2-407e-b681-b16cfcbedc7c",
+    "name": "Oncology Phase Ii Study 2",
+    "protocol_number": "ONCO-2026-002",
+    "therapy_area": "oncology",
+    "phase": "phase_ii",
+    "arms": [
+      {
+        "id": "c9df6481-de70-4fe8-811a-b8dbfb18d4ec",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 217.40005145897044,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 163.26310173786788,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 101.29812644069172,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 388.8368245239643,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 387.87226755436967,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 488.7552395480457,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 404.78487962082585,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 303.0726698417301,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 142.564329119082,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 350.12007742656704,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 436.66773926898685,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 303.0651527910537,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 179.56444070589322,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 195,
+            "dosing": {
+              "dose_mg": 249.5655410364592,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 15,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 164.61961430126135,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 16,
+            "day_from_enrollment": 225,
+            "dosing": {
+              "dose_mg": 481.39989906140113,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "3629a55b-20c9-4bb8-8808-03bdb0dde2dd"
+      },
+      {
+        "id": "9db4ad28-25d0-467e-bf1e-911b3826660f",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 217.40005145897044,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 163.26310173786788,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 101.29812644069172,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 388.8368245239643,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 387.87226755436967,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 488.7552395480457,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 404.78487962082585,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 303.0726698417301,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 142.564329119082,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 350.12007742656704,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 436.66773926898685,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 303.0651527910537,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 179.56444070589322,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 195,
+            "dosing": {
+              "dose_mg": 249.5655410364592,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 15,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 164.61961430126135,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 16,
+            "day_from_enrollment": 225,
+            "dosing": {
+              "dose_mg": 481.39989906140113,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "3629a55b-20c9-4bb8-8808-03bdb0dde2dd"
+      }
+    ],
+    "planned_enrollment": 162,
+    "sites": [
+      "a69ac146-7b41-4c56-aa9c-d7119a072ccb",
+      "96b83f74-5d48-4200-b205-6d52094fa6fb",
+      "04a68d26-5a25-4e64-9760-0e96748d150c",
+      "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+      "e0adc419-3ea8-4c11-ad3c-0fed44ab5df3",
+      "ff13c7c6-2e18-46e1-8e06-29c6ec934c21",
+      "cc8b4e4b-6795-423e-977b-c7206098ef88"
+    ],
+    "fsfv": "2026-01-29",
+    "lslv": "2027-09-21",
+    "enrollment_duration_months": 12,
+    "treatment_duration_months": 8,
+    "countries": [
+      "ES",
+      "DE",
+      "AU",
+      "SG",
+      "FR",
+      "JP",
+      "UK"
+    ],
+    "overage_pct": 0.2
+  },
+  {
+    "id": "94ac570b-c7d4-4e1a-b112-8891c707a040",
+    "name": "Oncology Phase Iii Study 3",
+    "protocol_number": "ONCO-2026-003",
+    "therapy_area": "oncology",
+    "phase": "phase_iii",
+    "arms": [
+      {
+        "id": "ebd2ec7a-af8d-49a1-b7d1-f161e25a7ed1",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 471.56539720087073,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 402.1060786543222,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 375.9470528398486,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 385.17958912764874,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 259.59691999897166,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 368.67478385531325,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 249.36820101171753,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 459.8456338571782,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 280.59445655645186,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 199.1622454664032,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 125.61035853053797,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 108.41370400282355,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 321.5686089697919,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 195,
+            "dosing": {
+              "dose_mg": 335.37604576414043,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 15,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 102.87633559403741,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 16,
+            "day_from_enrollment": 225,
+            "dosing": {
+              "dose_mg": 383.1363786193816,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 17,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 123.54950675052936,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 18,
+            "day_from_enrollment": 255,
+            "dosing": {
+              "dose_mg": 126.960131244123,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 19,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 112.56518322120725,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 20,
+            "day_from_enrollment": 285,
+            "dosing": {
+              "dose_mg": 232.17139563219948,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 21,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 305.66244792343565,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 22,
+            "day_from_enrollment": 315,
+            "dosing": {
+              "dose_mg": 211.39090558581879,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 23,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 294.1657996601963,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 24,
+            "day_from_enrollment": 345,
+            "dosing": {
+              "dose_mg": 315.69357255790186,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 25,
+            "day_from_enrollment": 360,
+            "dosing": {
+              "dose_mg": 389.3410263523883,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 26,
+            "day_from_enrollment": 375,
+            "dosing": {
+              "dose_mg": 452.95323005629507,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 27,
+            "day_from_enrollment": 390,
+            "dosing": {
+              "dose_mg": 330.48465988835994,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 28,
+            "day_from_enrollment": 405,
+            "dosing": {
+              "dose_mg": 197.19889695828982,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 29,
+            "day_from_enrollment": 420,
+            "dosing": {
+              "dose_mg": 289.18917717783745,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 30,
+            "day_from_enrollment": 435,
+            "dosing": {
+              "dose_mg": 262.8239845943747,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 31,
+            "day_from_enrollment": 450,
+            "dosing": {
+              "dose_mg": 137.73031859675288,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 32,
+            "day_from_enrollment": 465,
+            "dosing": {
+              "dose_mg": 363.5930998058652,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 33,
+            "day_from_enrollment": 480,
+            "dosing": {
+              "dose_mg": 241.71902663582154,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 34,
+            "day_from_enrollment": 495,
+            "dosing": {
+              "dose_mg": 264.4409104198952,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 35,
+            "day_from_enrollment": 510,
+            "dosing": {
+              "dose_mg": 445.5346993478413,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 36,
+            "day_from_enrollment": 525,
+            "dosing": {
+              "dose_mg": 121.6684748928682,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "5028db8e-56cd-41ec-b20d-5ddb4797df44"
+      },
+      {
+        "id": "ad4c6c6d-c3a4-4a6c-ae18-7f377b753506",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 471.56539720087073,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 402.1060786543222,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 375.9470528398486,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 385.17958912764874,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 259.59691999897166,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 368.67478385531325,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 249.36820101171753,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 459.8456338571782,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 280.59445655645186,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 199.1622454664032,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 125.61035853053797,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 108.41370400282355,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 321.5686089697919,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 195,
+            "dosing": {
+              "dose_mg": 335.37604576414043,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 15,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 102.87633559403741,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 16,
+            "day_from_enrollment": 225,
+            "dosing": {
+              "dose_mg": 383.1363786193816,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 17,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 123.54950675052936,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 18,
+            "day_from_enrollment": 255,
+            "dosing": {
+              "dose_mg": 126.960131244123,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 19,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 112.56518322120725,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 20,
+            "day_from_enrollment": 285,
+            "dosing": {
+              "dose_mg": 232.17139563219948,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 21,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 305.66244792343565,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 22,
+            "day_from_enrollment": 315,
+            "dosing": {
+              "dose_mg": 211.39090558581879,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 23,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 294.1657996601963,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 24,
+            "day_from_enrollment": 345,
+            "dosing": {
+              "dose_mg": 315.69357255790186,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 25,
+            "day_from_enrollment": 360,
+            "dosing": {
+              "dose_mg": 389.3410263523883,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 26,
+            "day_from_enrollment": 375,
+            "dosing": {
+              "dose_mg": 452.95323005629507,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 27,
+            "day_from_enrollment": 390,
+            "dosing": {
+              "dose_mg": 330.48465988835994,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 28,
+            "day_from_enrollment": 405,
+            "dosing": {
+              "dose_mg": 197.19889695828982,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 29,
+            "day_from_enrollment": 420,
+            "dosing": {
+              "dose_mg": 289.18917717783745,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 30,
+            "day_from_enrollment": 435,
+            "dosing": {
+              "dose_mg": 262.8239845943747,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 31,
+            "day_from_enrollment": 450,
+            "dosing": {
+              "dose_mg": 137.73031859675288,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 32,
+            "day_from_enrollment": 465,
+            "dosing": {
+              "dose_mg": 363.5930998058652,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 33,
+            "day_from_enrollment": 480,
+            "dosing": {
+              "dose_mg": 241.71902663582154,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 34,
+            "day_from_enrollment": 495,
+            "dosing": {
+              "dose_mg": 264.4409104198952,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 35,
+            "day_from_enrollment": 510,
+            "dosing": {
+              "dose_mg": 445.5346993478413,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 36,
+            "day_from_enrollment": 525,
+            "dosing": {
+              "dose_mg": 121.6684748928682,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "5028db8e-56cd-41ec-b20d-5ddb4797df44"
+      }
+    ],
+    "planned_enrollment": 610,
+    "sites": [
+      "11fa43ad-a7e3-4efd-9f29-3640ad9a9835",
+      "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+      "b603efae-614e-4e02-abcf-e60a4df7e99d",
+      "5cca2162-0c36-4e8e-a938-580f79a60141",
+      "f5c3e2ce-e234-4bce-b874-2abb1fee36ab",
+      "cf459128-fc3b-449d-9bca-4f3de55a424a",
+      "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+      "214db0f7-a42e-45b1-a8e3-3032083d8de8",
+      "04a68d26-5a25-4e64-9760-0e96748d150c",
+      "4c756b24-fea8-4525-97f4-2cde81f2d9bb",
+      "e0adc419-3ea8-4c11-ad3c-0fed44ab5df3",
+      "ff13c7c6-2e18-46e1-8e06-29c6ec934c21",
+      "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+      "1d09622e-f529-4977-bd68-4240d4b5e116"
+    ],
+    "fsfv": "2026-02-24",
+    "lslv": "2028-09-11",
+    "enrollment_duration_months": 13,
+    "treatment_duration_months": 18,
+    "countries": [
+      "IT",
+      "ES",
+      "DE",
+      "AU",
+      "SG",
+      "CA",
+      "US",
+      "JP",
+      "UK",
+      "KR"
+    ],
+    "overage_pct": 0.15
+  },
+  {
+    "id": "d08340b2-da2a-4bf7-a25e-6c6754ca2ca5",
+    "name": "Oncology Phase Ii Study 4",
+    "protocol_number": "ONCO-2026-004",
+    "therapy_area": "oncology",
+    "phase": "phase_ii",
+    "arms": [
+      {
+        "id": "c08d5988-94f0-443a-8793-3f6a497dae28",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 120.2353318099525,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 499.71298736509067,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 434.41103403198076,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 487.5985029139005,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 470.546793203251,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 439.4782937657222,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 166.52444424156562,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 294.2564501802874,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 185.49891967967267,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 260.41611701978104,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 123.45415998887157,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 251.58924759076643,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 494.1235375118904,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 195,
+            "dosing": {
+              "dose_mg": 206.08122326886078,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 15,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 413.62824077942776,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 16,
+            "day_from_enrollment": 225,
+            "dosing": {
+              "dose_mg": 282.0033469356573,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 17,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 269.20299439606515,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 18,
+            "day_from_enrollment": 255,
+            "dosing": {
+              "dose_mg": 482.92705634386925,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 19,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 498.16907579708555,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 20,
+            "day_from_enrollment": 285,
+            "dosing": {
+              "dose_mg": 322.3073293622473,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "a29fd515-7e8c-4307-87f7-9349d9f98c9d"
+      },
+      {
+        "id": "a87466df-7e3d-41a0-ab0e-c61845003848",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 120.2353318099525,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 15,
+            "dosing": {
+              "dose_mg": 499.71298736509067,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 434.41103403198076,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 45,
+            "dosing": {
+              "dose_mg": 487.5985029139005,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 470.546793203251,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 75,
+            "dosing": {
+              "dose_mg": 439.4782937657222,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 166.52444424156562,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 105,
+            "dosing": {
+              "dose_mg": 294.2564501802874,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 185.49891967967267,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 135,
+            "dosing": {
+              "dose_mg": 260.41611701978104,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 123.45415998887157,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 165,
+            "dosing": {
+              "dose_mg": 251.58924759076643,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 494.1235375118904,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 195,
+            "dosing": {
+              "dose_mg": 206.08122326886078,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 15,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 413.62824077942776,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 16,
+            "day_from_enrollment": 225,
+            "dosing": {
+              "dose_mg": 282.0033469356573,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 17,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 269.20299439606515,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 18,
+            "day_from_enrollment": 255,
+            "dosing": {
+              "dose_mg": 482.92705634386925,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          },
+          {
+            "visit_number": 19,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 498.16907579708555,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 20,
+            "day_from_enrollment": 285,
+            "dosing": {
+              "dose_mg": 322.3073293622473,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": false
+          }
+        ],
+        "drug_product_id": "a29fd515-7e8c-4307-87f7-9349d9f98c9d"
+      }
+    ],
+    "planned_enrollment": 189,
+    "sites": [
+      "96b83f74-5d48-4200-b205-6d52094fa6fb",
+      "62da3787-0bb7-41f2-8df0-445441c10aca",
+      "67f7a1b5-56de-4a92-9a49-6d363025a93a",
+      "5cca2162-0c36-4e8e-a938-580f79a60141"
+    ],
+    "fsfv": "2026-01-26",
+    "lslv": "2028-11-11",
+    "enrollment_duration_months": 24,
+    "treatment_duration_months": 10,
+    "countries": [
+      "NL",
+      "CA",
+      "UK"
+    ],
+    "overage_pct": 0.2
+  },
+  {
+    "id": "5e8e87de-c650-47e5-b841-40fdb425a516",
+    "name": "Immunology Phase I Study 5",
+    "protocol_number": "IMMU-2026-005",
+    "therapy_area": "immunology",
+    "phase": "phase_i",
+    "arms": [
+      {
+        "id": "390d1684-4b1b-4f93-adb0-efbefe4f2489",
+        "name": "Treatment",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 290.1947258186126,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 70.02786631014672,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 96.4562402451808,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 198.75877661250692,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "cef18082-18be-42e2-91ef-15d88fd3828f"
+      }
+    ],
+    "planned_enrollment": 31,
+    "sites": [
+      "4fbfc47f-ffda-40d7-aafe-a95c046b2315",
+      "f28810a4-c0ab-4603-bc8a-53e2f68cc379"
+    ],
+    "fsfv": "2026-01-15",
+    "lslv": "2027-09-07",
+    "enrollment_duration_months": 16,
+    "treatment_duration_months": 4,
+    "countries": [
+      "SG",
+      "KR"
+    ],
+    "overage_pct": 0.25
+  },
+  {
+    "id": "c039111e-f264-4ce4-8d26-9385b3d3b9d1",
+    "name": "Immunology Phase Ii Study 6",
+    "protocol_number": "IMMU-2026-006",
+    "therapy_area": "immunology",
+    "phase": "phase_ii",
+    "arms": [
+      {
+        "id": "4c5455ed-9d25-4df1-9df5-e4a726649508",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 205.2898138732732,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 190.74841140973652,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 74.99531223114712,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 184.40860102540682,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 176.47117351219134,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 83.11414259161683,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "b4a9b8c8-6916-4112-baf8-59f294a26c5a"
+      },
+      {
+        "id": "83e2320c-33e5-4352-a56c-ed67b8dfe456",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 205.2898138732732,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 190.74841140973652,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 74.99531223114712,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 184.40860102540682,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 176.47117351219134,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 83.11414259161683,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "b4a9b8c8-6916-4112-baf8-59f294a26c5a"
+      }
+    ],
+    "planned_enrollment": 69,
+    "sites": [
+      "04a68d26-5a25-4e64-9760-0e96748d150c",
+      "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+      "214db0f7-a42e-45b1-a8e3-3032083d8de8",
+      "3758c43c-d3d3-4207-9c2b-4e7983eec72c",
+      "f5c3e2ce-e234-4bce-b874-2abb1fee36ab",
+      "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+      "4695cd69-0d21-4455-ba80-8a8ab9ca8aa8"
+    ],
+    "fsfv": "2026-04-28",
+    "lslv": "2027-03-24",
+    "enrollment_duration_months": 5,
+    "treatment_duration_months": 6,
+    "countries": [
+      "ES",
+      "DE",
+      "US",
+      "CA",
+      "UK"
+    ],
+    "overage_pct": 0.2
+  },
+  {
+    "id": "b42104d5-a2eb-450b-bb31-f232abf493a9",
+    "name": "Immunology Phase Iii Study 7",
+    "protocol_number": "IMMU-2026-007",
+    "therapy_area": "immunology",
+    "phase": "phase_iii",
+    "arms": [
+      {
+        "id": "3ad27bd7-5e45-4f04-98d2-268c93d9e28d",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 221.87428220033263,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 263.2282038479743,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 176.3522645244968,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 112.78031301747353,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 277.03976155464295,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 62.69972341563266,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 208.57111182729855,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 257.33702234305485,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 61.0216904497625,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 133.38913465127206,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 82.70491517542555,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 294.949488457209,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 360,
+            "dosing": {
+              "dose_mg": 90.39549406847154,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 390,
+            "dosing": {
+              "dose_mg": 160.45887796521265,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "c5e87323-14d5-432f-b429-7290e4ebbe84"
+      },
+      {
+        "id": "509942b5-42dc-4146-bb16-d4673970e552",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 221.87428220033263,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 263.2282038479743,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 176.3522645244968,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 112.78031301747353,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 277.03976155464295,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 62.69972341563266,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 208.57111182729855,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 257.33702234305485,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 61.0216904497625,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 133.38913465127206,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 82.70491517542555,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 294.949488457209,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 360,
+            "dosing": {
+              "dose_mg": 90.39549406847154,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 390,
+            "dosing": {
+              "dose_mg": 160.45887796521265,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "c5e87323-14d5-432f-b429-7290e4ebbe84"
+      }
+    ],
+    "planned_enrollment": 567,
+    "sites": [
+      "3758c43c-d3d3-4207-9c2b-4e7983eec72c",
+      "67f7a1b5-56de-4a92-9a49-6d363025a93a",
+      "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+      "4695cd69-0d21-4455-ba80-8a8ab9ca8aa8",
+      "524e20e0-7334-42dd-8361-a26df035322e",
+      "8b7bfc2d-3c6d-4133-9710-557bf27939d9",
+      "cf459128-fc3b-449d-9bca-4f3de55a424a",
+      "d4ade72b-c786-4f78-9107-41e106bb075e",
+      "1d09622e-f529-4977-bd68-4240d4b5e116",
+      "cc8b4e4b-6795-423e-977b-c7206098ef88",
+      "18890bfc-90c9-462c-b51e-df31057dfb9b",
+      "e0adc419-3ea8-4c11-ad3c-0fed44ab5df3"
+    ],
+    "fsfv": "2026-02-22",
+    "lslv": "2028-06-11",
+    "enrollment_duration_months": 14,
+    "treatment_duration_months": 14,
+    "countries": [
+      "IT",
+      "DE",
+      "AU",
+      "US",
+      "CA",
+      "FR",
+      "JP"
+    ],
+    "overage_pct": 0.15
+  },
+  {
+    "id": "7c1f5c08-dff1-482e-95bb-4f36806d798a",
+    "name": "Immunology Phase Iii Study 8",
+    "protocol_number": "IMMU-2026-008",
+    "therapy_area": "immunology",
+    "phase": "phase_iii",
+    "arms": [
+      {
+        "id": "85fdeab9-e45f-4227-86f5-f9cb1ea75091",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 271.0336753627522,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 151.5943474580292,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 205.1653775376782,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 88.63833458305116,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 282.47025392341857,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 266.151424054991,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 294.05150823274073,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 252.69292998509923,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 270.3540511658311,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 56.19659047454718,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 234.14111793877052,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 133.04636698660715,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 360,
+            "dosing": {
+              "dose_mg": 282.70397151208135,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 390,
+            "dosing": {
+              "dose_mg": 250.55878473428473,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "12f45e02-5406-4a08-ae23-f14ab51172ac"
+      },
+      {
+        "id": "00d62248-ab33-443f-8f71-0f38bf55dade",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 271.0336753627522,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 151.5943474580292,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 205.1653775376782,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 88.63833458305116,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 282.47025392341857,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 266.151424054991,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 294.05150823274073,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 252.69292998509923,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 270.3540511658311,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 56.19659047454718,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 234.14111793877052,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 133.04636698660715,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 13,
+            "day_from_enrollment": 360,
+            "dosing": {
+              "dose_mg": 282.70397151208135,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 14,
+            "day_from_enrollment": 390,
+            "dosing": {
+              "dose_mg": 250.55878473428473,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "12f45e02-5406-4a08-ae23-f14ab51172ac"
+      }
+    ],
+    "planned_enrollment": 252,
+    "sites": [
+      "f5c3e2ce-e234-4bce-b874-2abb1fee36ab",
+      "0aec8d9b-05fb-43e9-b9ef-2d8d52134477",
+      "11fa43ad-a7e3-4efd-9f29-3640ad9a9835",
+      "b603efae-614e-4e02-abcf-e60a4df7e99d",
+      "5cca2162-0c36-4e8e-a938-580f79a60141",
+      "a69ac146-7b41-4c56-aa9c-d7119a072ccb",
+      "8b7bfc2d-3c6d-4133-9710-557bf27939d9",
+      "214db0f7-a42e-45b1-a8e3-3032083d8de8",
+      "96b83f74-5d48-4200-b205-6d52094fa6fb",
+      "c0d24300-a3f1-4d77-b926-cb3715490eb2",
+      "d4ade72b-c786-4f78-9107-41e106bb075e",
+      "4fbfc47f-ffda-40d7-aafe-a95c046b2315",
+      "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+      "4c756b24-fea8-4525-97f4-2cde81f2d9bb",
+      "1d09622e-f529-4977-bd68-4240d4b5e116"
+    ],
+    "fsfv": "2026-05-24",
+    "lslv": "2027-12-15",
+    "enrollment_duration_months": 5,
+    "treatment_duration_months": 14,
+    "countries": [
+      "ES",
+      "AU",
+      "CA",
+      "US",
+      "FR",
+      "JP",
+      "UK",
+      "KR"
+    ],
+    "overage_pct": 0.15
+  },
+  {
+    "id": "8e5bb27f-1ac2-4f49-9d16-8520e61d517c",
+    "name": "Neuroscience Phase I Study 9",
+    "protocol_number": "NEUR-2026-009",
+    "therapy_area": "neuroscience",
+    "phase": "phase_i",
+    "arms": [
+      {
+        "id": "5dce5fc3-ebd4-4b9b-9edd-199fbfc65058",
+        "name": "Treatment",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 15.031559624261405,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 34.7014932236883,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "00071f67-cfea-499b-bbcf-1d89197c04c3"
+      }
+    ],
+    "planned_enrollment": 42,
+    "sites": [
+      "cc8b4e4b-6795-423e-977b-c7206098ef88"
+    ],
+    "fsfv": "2026-02-28",
+    "lslv": "2029-10-10",
+    "enrollment_duration_months": 42,
+    "treatment_duration_months": 2,
+    "countries": [
+      "AU"
+    ],
+    "overage_pct": 0.25
+  },
+  {
+    "id": "b066b727-f758-4fe1-8ea0-342e20e40d4a",
+    "name": "Neuroscience Phase Ii Study 10",
+    "protocol_number": "NEUR-2026-010",
+    "therapy_area": "neuroscience",
+    "phase": "phase_ii",
+    "arms": [
+      {
+        "id": "274bc64d-65ed-4157-a348-39d8464ce4e0",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 49.290613219246545,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 10.20406028131987,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 45.47771298100398,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 13.553544852603322,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 6.997394017095399,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 24.622588195473753,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "fb9a7a0c-1d24-4ac6-ab7d-d2352b8b3294"
+      },
+      {
+        "id": "4140a771-fbf3-4aa7-8a53-afd1cd4b9aae",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 49.290613219246545,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 10.20406028131987,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 45.47771298100398,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 13.553544852603322,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 6.997394017095399,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 24.622588195473753,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "fb9a7a0c-1d24-4ac6-ab7d-d2352b8b3294"
+      }
+    ],
+    "planned_enrollment": 180,
+    "sites": [
+      "3758c43c-d3d3-4207-9c2b-4e7983eec72c",
+      "c7372b57-ed4c-48a3-aa38-858c49641f18",
+      "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+      "d4ade72b-c786-4f78-9107-41e106bb075e",
+      "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+      "18890bfc-90c9-462c-b51e-df31057dfb9b",
+      "1d09622e-f529-4977-bd68-4240d4b5e116"
+    ],
+    "fsfv": "2026-06-05",
+    "lslv": "2027-12-27",
+    "enrollment_duration_months": 13,
+    "treatment_duration_months": 6,
+    "countries": [
+      "AU",
+      "US",
+      "CA",
+      "JP",
+      "KR"
+    ],
+    "overage_pct": 0.2
+  },
+  {
+    "id": "7136b3d8-dff0-46c7-bf7a-6907e6966194",
+    "name": "Neuroscience Phase Iii Study 11",
+    "protocol_number": "NEUR-2026-011",
+    "therapy_area": "neuroscience",
+    "phase": "phase_iii",
+    "arms": [
+      {
+        "id": "28efeeeb-e537-4c44-952d-110ced3701b8",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 18.67437271707592,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 14.458220819718886,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 40.359147236491104,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 32.299770671589314,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 19.501215338144217,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 24.880370757707883,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 35.403225493554494,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 28.002829859356417,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 40.71809295977009,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 48.19244016573663,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "3c037907-cd61-4387-b8a2-cf765a262ec1"
+      },
+      {
+        "id": "50810ac9-831b-4458-9440-259d42cf43b8",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 18.67437271707592,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 14.458220819718886,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 40.359147236491104,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 32.299770671589314,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 19.501215338144217,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 24.880370757707883,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 35.403225493554494,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 28.002829859356417,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 40.71809295977009,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 48.19244016573663,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "3c037907-cd61-4387-b8a2-cf765a262ec1"
+      }
+    ],
+    "planned_enrollment": 815,
+    "sites": [
+      "0aec8d9b-05fb-43e9-b9ef-2d8d52134477",
+      "67f7a1b5-56de-4a92-9a49-6d363025a93a",
+      "026e8fb2-9461-4ac1-a860-47829aa32eb5",
+      "5cca2162-0c36-4e8e-a938-580f79a60141",
+      "11fa43ad-a7e3-4efd-9f29-3640ad9a9835",
+      "62da3787-0bb7-41f2-8df0-445441c10aca",
+      "c0d24300-a3f1-4d77-b926-cb3715490eb2",
+      "04a68d26-5a25-4e64-9760-0e96748d150c",
+      "8b7bfc2d-3c6d-4133-9710-557bf27939d9",
+      "a69ac146-7b41-4c56-aa9c-d7119a072ccb",
+      "cc8b4e4b-6795-423e-977b-c7206098ef88",
+      "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+      "18890bfc-90c9-462c-b51e-df31057dfb9b",
+      "f28810a4-c0ab-4603-bc8a-53e2f68cc379",
+      "ff13c7c6-2e18-46e1-8e06-29c6ec934c21"
+    ],
+    "fsfv": "2026-01-01",
+    "lslv": "2028-02-20",
+    "enrollment_duration_months": 16,
+    "treatment_duration_months": 10,
+    "countries": [
+      "ES",
+      "DE",
+      "NL",
+      "SG",
+      "AU",
+      "CA",
+      "US",
+      "FR",
+      "JP",
+      "KR"
+    ],
+    "overage_pct": 0.15
+  },
+  {
+    "id": "c78d4890-7012-4eb6-88a8-7428915740e3",
+    "name": "Neuroscience Phase Ii Study 12",
+    "protocol_number": "NEUR-2026-012",
+    "therapy_area": "neuroscience",
+    "phase": "phase_ii",
+    "arms": [
+      {
+        "id": "1bb5af55-3b1a-4208-abea-a96b60b04bfb",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 22.27903103267381,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 22.984378829444196,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 11.64071052910842,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 35.94300858862338,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "be5965bc-1b51-43cf-9b5c-c01d64b55198"
+      },
+      {
+        "id": "a0b61777-1096-4d6f-863c-38612c4d0b63",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 22.27903103267381,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 22.984378829444196,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 11.64071052910842,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 35.94300858862338,
+              "doses_per_visit": 30,
+              "unit_form": "tablets"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "be5965bc-1b51-43cf-9b5c-c01d64b55198"
+      }
+    ],
+    "planned_enrollment": 247,
+    "sites": [
+      "04a68d26-5a25-4e64-9760-0e96748d150c",
+      "cf459128-fc3b-449d-9bca-4f3de55a424a",
+      "62da3787-0bb7-41f2-8df0-445441c10aca",
+      "214db0f7-a42e-45b1-a8e3-3032083d8de8",
+      "c7372b57-ed4c-48a3-aa38-858c49641f18",
+      "67f7a1b5-56de-4a92-9a49-6d363025a93a"
+    ],
+    "fsfv": "2026-06-28",
+    "lslv": "2028-07-17",
+    "enrollment_duration_months": 21,
+    "treatment_duration_months": 4,
+    "countries": [
+      "IT",
+      "DE",
+      "NL",
+      "US",
+      "CA",
+      "UK"
+    ],
+    "overage_pct": 0.2
+  },
+  {
+    "id": "d5bcccbe-5a64-47d5-b09d-8fb2e9439b01",
+    "name": "Rare_Disease Phase I Study 13",
+    "protocol_number": "RARE-2026-013",
+    "therapy_area": "rare_disease",
+    "phase": "phase_i",
+    "arms": [
+      {
+        "id": "0085ada6-e1e0-4afa-b882-d6d3916ff971",
+        "name": "Treatment",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 65.13870904855865,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 74.73465651483704,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 55.43003483419618,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 84.75122527492735,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 59.30847555497456,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "153c49d2-ccff-42ac-bdcd-b7545e77b81f"
+      }
+    ],
+    "planned_enrollment": 24,
+    "sites": [
+      "67f7a1b5-56de-4a92-9a49-6d363025a93a",
+      "4695cd69-0d21-4455-ba80-8a8ab9ca8aa8"
+    ],
+    "fsfv": "2026-04-24",
+    "lslv": "2027-09-16",
+    "enrollment_duration_months": 12,
+    "treatment_duration_months": 5,
+    "countries": [
+      "CA",
+      "US"
+    ],
+    "overage_pct": 0.25
+  },
+  {
+    "id": "ac74c3d5-1459-423d-b297-a877a2f04a60",
+    "name": "Rare_Disease Phase Ii Study 14",
+    "protocol_number": "RARE-2026-014",
+    "therapy_area": "rare_disease",
+    "phase": "phase_ii",
+    "arms": [
+      {
+        "id": "fbad79e6-53fe-4320-8a7e-481b110a2e22",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 29.255758939538868,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 47.33811063083964,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 39.779325193427525,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 51.93318730160356,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 15.603913952522678,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 84.96020524064389,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 45.052913140024714,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "d2f706f2-de70-4991-be69-bd16f8cb0a88"
+      },
+      {
+        "id": "fa413553-1d0a-4f83-8159-3d5d35be7882",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 29.255758939538868,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 47.33811063083964,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 39.779325193427525,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 51.93318730160356,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 15.603913952522678,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 84.96020524064389,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 45.052913140024714,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "d2f706f2-de70-4991-be69-bd16f8cb0a88"
+      }
+    ],
+    "planned_enrollment": 74,
+    "sites": [
+      "cc8b4e4b-6795-423e-977b-c7206098ef88",
+      "f28810a4-c0ab-4603-bc8a-53e2f68cc379",
+      "e0adc419-3ea8-4c11-ad3c-0fed44ab5df3",
+      "524e20e0-7334-42dd-8361-a26df035322e",
+      "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+      "cf459128-fc3b-449d-9bca-4f3de55a424a",
+      "8b7bfc2d-3c6d-4133-9710-557bf27939d9"
+    ],
+    "fsfv": "2026-06-30",
+    "lslv": "2027-07-25",
+    "enrollment_duration_months": 6,
+    "treatment_duration_months": 7,
+    "countries": [
+      "IT",
+      "ES",
+      "DE",
+      "SG",
+      "AU",
+      "FR",
+      "JP"
+    ],
+    "overage_pct": 0.2
+  },
+  {
+    "id": "189d2365-bb4d-4b5f-a3b4-230e6eadc528",
+    "name": "Rare_Disease Phase Iii Study 15",
+    "protocol_number": "RARE-2026-015",
+    "therapy_area": "rare_disease",
+    "phase": "phase_iii",
+    "arms": [
+      {
+        "id": "6afcb120-624b-4cf3-a69d-c9c403dba12c",
+        "name": "Treatment",
+        "allocation_ratio": 2.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 63.27034980651198,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 69.66997811525451,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 17.55527159458002,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 48.57514926949854,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 88.01662200356171,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 26.355612386208893,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 33.41406825273742,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 39.46174002475608,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 50.92293925148339,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 40.37504932664836,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 89.16759874017059,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 35.043095407492544,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "8cd2f145-4bc7-4975-b8f1-e8fcf1a637fc"
+      },
+      {
+        "id": "d5dcdcf8-eee4-4ebb-acd5-46e4498f584e",
+        "name": "Placebo",
+        "allocation_ratio": 1.0,
+        "visits": [
+          {
+            "visit_number": 1,
+            "day_from_enrollment": 0,
+            "dosing": {
+              "dose_mg": 63.27034980651198,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 2,
+            "day_from_enrollment": 30,
+            "dosing": {
+              "dose_mg": 69.66997811525451,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 3,
+            "day_from_enrollment": 60,
+            "dosing": {
+              "dose_mg": 17.55527159458002,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 4,
+            "day_from_enrollment": 90,
+            "dosing": {
+              "dose_mg": 48.57514926949854,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 5,
+            "day_from_enrollment": 120,
+            "dosing": {
+              "dose_mg": 88.01662200356171,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 6,
+            "day_from_enrollment": 150,
+            "dosing": {
+              "dose_mg": 26.355612386208893,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 7,
+            "day_from_enrollment": 180,
+            "dosing": {
+              "dose_mg": 33.41406825273742,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 8,
+            "day_from_enrollment": 210,
+            "dosing": {
+              "dose_mg": 39.46174002475608,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 9,
+            "day_from_enrollment": 240,
+            "dosing": {
+              "dose_mg": 50.92293925148339,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 10,
+            "day_from_enrollment": 270,
+            "dosing": {
+              "dose_mg": 40.37504932664836,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 11,
+            "day_from_enrollment": 300,
+            "dosing": {
+              "dose_mg": 89.16759874017059,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          },
+          {
+            "visit_number": 12,
+            "day_from_enrollment": 330,
+            "dosing": {
+              "dose_mg": 35.043095407492544,
+              "doses_per_visit": 1,
+              "unit_form": "vials"
+            },
+            "requires_resupply": true
+          }
+        ],
+        "drug_product_id": "8cd2f145-4bc7-4975-b8f1-e8fcf1a637fc"
+      }
+    ],
+    "planned_enrollment": 196,
+    "sites": [
+      "11fa43ad-a7e3-4efd-9f29-3640ad9a9835",
+      "f5c3e2ce-e234-4bce-b874-2abb1fee36ab",
+      "b603efae-614e-4e02-abcf-e60a4df7e99d",
+      "5cca2162-0c36-4e8e-a938-580f79a60141",
+      "4695cd69-0d21-4455-ba80-8a8ab9ca8aa8",
+      "96b83f74-5d48-4200-b205-6d52094fa6fb",
+      "c0d24300-a3f1-4d77-b926-cb3715490eb2",
+      "c794aa6a-b91e-4c1f-a0ba-507d2ac3ec14",
+      "524e20e0-7334-42dd-8361-a26df035322e",
+      "cc8b4e4b-6795-423e-977b-c7206098ef88",
+      "afdfe73e-f3ac-4a3f-bc93-6b19e0e177bb",
+      "ff13c7c6-2e18-46e1-8e06-29c6ec934c21"
+    ],
+    "fsfv": "2026-04-11",
+    "lslv": "2027-09-03",
+    "enrollment_duration_months": 5,
+    "treatment_duration_months": 12,
+    "countries": [
+      "ES",
+      "DE",
+      "AU",
+      "SG",
+      "CA",
+      "US",
+      "UK",
+      "KR"
+    ],
+    "overage_pct": 0.15
+  }
+]

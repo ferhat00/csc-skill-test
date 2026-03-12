@@ -1,0 +1,602 @@
+[
+  {
+    "material_id": "67dbd65e-89c4-479f-8e6f-26f631ad3f0a",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 15.8,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 20.5,
+    "days_of_supply": 43.84930757956401
+  },
+  {
+    "material_id": "90095815-4efb-4bad-86ac-4fa72155cd40",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 10.5,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 1.8,
+    "days_of_supply": 74.26790135481316
+  },
+  {
+    "material_id": "a60c9aae-2c10-4cf2-b8e0-e06b867d4d00",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 18.7,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 9.6,
+    "days_of_supply": 31.60493327918911
+  },
+  {
+    "material_id": "d668f555-326f-4866-9bb0-8786c4909173",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 18.4,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 24.6,
+    "days_of_supply": 49.61735314998179
+  },
+  {
+    "material_id": "ccd25916-6dfa-4154-837f-7e2cb8fa7a41",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 29.7,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 32.6,
+    "days_of_supply": 75.61028662764306
+  },
+  {
+    "material_id": "70db6340-beb0-4e95-8c32-6734147145bb",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 23.4,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 14.5,
+    "days_of_supply": 59.53125080141339
+  },
+  {
+    "material_id": "c8a9f16f-2cb2-4c00-97e0-954c186aa77f",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 12.2,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 6.7,
+    "days_of_supply": 59.873942653946735
+  },
+  {
+    "material_id": "45a114ec-3117-4112-8c84-c355dff0dcda",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 51.3,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 38.8,
+    "days_of_supply": 78.56889584347857
+  },
+  {
+    "material_id": "c2fe5f6b-c06c-4f88-81ce-fa80ca268900",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 29.1,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 7.1,
+    "days_of_supply": 75.83789439421825
+  },
+  {
+    "material_id": "138731fe-0b31-4a75-9243-e8e266e49a1f",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 25.8,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 17.6,
+    "days_of_supply": 37.14804651601458
+  },
+  {
+    "material_id": "5faffb8d-7240-406f-a997-6c631d58b2e8",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 28.1,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 31.6,
+    "days_of_supply": 56.55336877390276
+  },
+  {
+    "material_id": "ad6ba600-3b17-463a-9f9a-4a21fd32503a",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 3.9,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 3.6,
+    "days_of_supply": 69.56466161922845
+  },
+  {
+    "material_id": "92d5ad2d-fa7d-4c02-8544-0f6f5942dec6",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 43.2,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 35.3,
+    "days_of_supply": 39.848654638892235
+  },
+  {
+    "material_id": "43900a1f-6a9b-41d2-aa02-ad2ffed6c06c",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 19.7,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 11.6,
+    "days_of_supply": 53.34482944940996
+  },
+  {
+    "material_id": "527b8e2e-7515-4212-9502-899fd28b5c42",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 58.6,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 35.0,
+    "days_of_supply": 59.43322270814117
+  },
+  {
+    "material_id": "ccf89241-d94b-4464-b73f-32b978ee31e7",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 2968.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 1943.0,
+    "days_of_supply": 38.79273518202038
+  },
+  {
+    "material_id": "3629a55b-20c9-4bb8-8808-03bdb0dde2dd",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 4774.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 1592.0,
+    "days_of_supply": 22.229485032375102
+  },
+  {
+    "material_id": "5028db8e-56cd-41ec-b20d-5ddb4797df44",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 1141.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 1246.0,
+    "days_of_supply": 35.11190820245137
+  },
+  {
+    "material_id": "a29fd515-7e8c-4307-87f7-9349d9f98c9d",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 1242.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 908.0,
+    "days_of_supply": 31.377501583243244
+  },
+  {
+    "material_id": "cef18082-18be-42e2-91ef-15d88fd3828f",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 362.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 651.0,
+    "days_of_supply": 25.12792254594986
+  },
+  {
+    "material_id": "b4a9b8c8-6916-4112-baf8-59f294a26c5a",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 2187.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 2506.0,
+    "days_of_supply": 43.35867912378902
+  },
+  {
+    "material_id": "c5e87323-14d5-432f-b429-7290e4ebbe84",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 3327.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 1912.0,
+    "days_of_supply": 35.222935109540835
+  },
+  {
+    "material_id": "12f45e02-5406-4a08-ae23-f14ab51172ac",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 1807.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 2206.0,
+    "days_of_supply": 36.477184102317466
+  },
+  {
+    "material_id": "00071f67-cfea-499b-bbcf-1d89197c04c3",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 785.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 844.0,
+    "days_of_supply": 29.384883537317165
+  },
+  {
+    "material_id": "fb9a7a0c-1d24-4ac6-ab7d-d2352b8b3294",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 936.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 372.0,
+    "days_of_supply": 47.51965047881014
+  },
+  {
+    "material_id": "3c037907-cd61-4387-b8a2-cf765a262ec1",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 2585.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 561.0,
+    "days_of_supply": 26.79116964927673
+  },
+  {
+    "material_id": "be5965bc-1b51-43cf-9b5c-c01d64b55198",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 1037.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 252.0,
+    "days_of_supply": 46.31071146230951
+  },
+  {
+    "material_id": "153c49d2-ccff-42ac-bdcd-b7545e77b81f",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 1206.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 914.0,
+    "days_of_supply": 36.84690513212051
+  },
+  {
+    "material_id": "d2f706f2-de70-4991-be69-bd16f8cb0a88",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "on_hand": 530.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 940.0,
+    "days_of_supply": 20.889458056022157
+  },
+  {
+    "material_id": "8cd2f145-4bc7-4975-b8f1-e8fcf1a637fc",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "on_hand": 2942.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 2840.0,
+    "days_of_supply": 32.89685475007851
+  },
+  {
+    "material_id": "94494a56-b91e-489b-8c8f-257f6f0a0070",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 139.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 172.0,
+    "days_of_supply": 35.72591893563672
+  },
+  {
+    "material_id": "f89cb200-a435-4a54-b68b-76fd267d64d4",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 182.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 174.0,
+    "days_of_supply": 39.34371533205447
+  },
+  {
+    "material_id": "bf786dce-2e65-4f8b-b6a7-4a0fd0137dec",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 367.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 92.0,
+    "days_of_supply": 23.98562692776344
+  },
+  {
+    "material_id": "8d6bd9d0-1dd1-4cad-bd24-beafbc33a29d",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 488.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 100.0,
+    "days_of_supply": 34.06332601174729
+  },
+  {
+    "material_id": "b98b53d9-64e2-44dc-8d31-1af9c00a3155",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 490.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 69.0,
+    "days_of_supply": 40.5100289439784
+  },
+  {
+    "material_id": "4b52740f-bfea-4d26-990c-af72b70e29a9",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 186.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 116.0,
+    "days_of_supply": 23.91960807060324
+  },
+  {
+    "material_id": "f62e0be7-38ac-4c45-a9a6-e45897738c09",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 329.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 251.0,
+    "days_of_supply": 33.73716870163858
+  },
+  {
+    "material_id": "2b90f1c5-60ed-468e-a10d-7ce05672ca5d",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 483.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 229.0,
+    "days_of_supply": 32.34579744072265
+  },
+  {
+    "material_id": "57d394fb-0911-45e9-8aa0-6bf8b3aae23d",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 337.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 118.0,
+    "days_of_supply": 31.992848843601124
+  },
+  {
+    "material_id": "ad5b59e2-858e-4cc8-a6d2-3f872202b2c6",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 312.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 157.0,
+    "days_of_supply": 25.41949461303318
+  },
+  {
+    "material_id": "d7014607-ef79-450b-b5ed-0c13036bb3d3",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 131.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 256.0,
+    "days_of_supply": 30.139186040489385
+  },
+  {
+    "material_id": "0d4b921a-a3ce-46bd-a6c3-f0a38091230b",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 220.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 216.0,
+    "days_of_supply": 24.400588989275022
+  },
+  {
+    "material_id": "64dd12e2-30ef-47ec-a484-56e71ec1ede7",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 266.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 113.0,
+    "days_of_supply": 30.461076971865133
+  },
+  {
+    "material_id": "52dbb900-6873-4431-8216-d40a5aaa7bfb",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 369.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 187.0,
+    "days_of_supply": 41.42689705310836
+  },
+  {
+    "material_id": "c457920c-20fa-4917-9df8-d031838def37",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 351.0,
+    "in_transit": 0.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 179.0,
+    "days_of_supply": 20.59616817016377
+  },
+  {
+    "material_id": "23f2144a-5924-4117-bcc6-7972d0ecaf18",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 175.0,
+    "in_transit": 66.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 170.0,
+    "days_of_supply": 43.143089816114745
+  },
+  {
+    "material_id": "d35d8bb9-85cb-4910-b14b-3cb607c6a13f",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 117.0,
+    "in_transit": 64.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 168.0,
+    "days_of_supply": 40.58323944414835
+  },
+  {
+    "material_id": "5e3aabe9-ecbb-4df0-a7d0-316482ca6e5f",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 277.0,
+    "in_transit": 93.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 154.0,
+    "days_of_supply": 16.796449837595876
+  },
+  {
+    "material_id": "1d6954b4-1766-4828-a7d7-0d41cd7fe857",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 100.0,
+    "in_transit": 46.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 71.0,
+    "days_of_supply": 37.39300549446939
+  },
+  {
+    "material_id": "d69f4430-341a-49e7-bed4-0759cfd19ecb",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 241.0,
+    "in_transit": 84.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 100.0,
+    "days_of_supply": 40.8055784918847
+  },
+  {
+    "material_id": "9f661541-aed5-46a6-a02f-1ef2bd91b03c",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 278.0,
+    "in_transit": 63.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 174.0,
+    "days_of_supply": 23.00804275804252
+  },
+  {
+    "material_id": "dd064e59-2f87-43fd-a088-833286fd1dd6",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 122.0,
+    "in_transit": 16.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 147.0,
+    "days_of_supply": 22.083894924640493
+  },
+  {
+    "material_id": "36968d10-870d-4d00-afe4-2cd6e5cfb14d",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 110.0,
+    "in_transit": 15.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 35.0,
+    "days_of_supply": 38.911342805749655
+  },
+  {
+    "material_id": "40e1b291-706f-4059-967b-7fefd76fb312",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 128.0,
+    "in_transit": 49.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 199.0,
+    "days_of_supply": 27.660573865530353
+  },
+  {
+    "material_id": "e5da6352-803b-4fbe-868b-9809e4e6c95a",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 276.0,
+    "in_transit": 20.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 76.0,
+    "days_of_supply": 15.874256027876623
+  },
+  {
+    "material_id": "b8f650d0-6f9d-4ece-81e7-8b3247fd0ed4",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 247.0,
+    "in_transit": 28.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 124.0,
+    "days_of_supply": 34.32881463747941
+  },
+  {
+    "material_id": "785377f2-4377-4f22-9146-cf4c4317350b",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 61.0,
+    "in_transit": 72.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 163.0,
+    "days_of_supply": 16.65981818577289
+  },
+  {
+    "material_id": "336998ab-94f3-428d-b82c-7a8524868521",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 274.0,
+    "in_transit": 31.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 81.0,
+    "days_of_supply": 16.90745090706085
+  },
+  {
+    "material_id": "866ab7b5-aced-4b3f-b774-e67394f18f6a",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "on_hand": 289.0,
+    "in_transit": 90.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 144.0,
+    "days_of_supply": 41.57158056429914
+  },
+  {
+    "material_id": "96a11ff0-e226-4275-bcd9-b6c5388b4b3b",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "on_hand": 149.0,
+    "in_transit": 84.0,
+    "on_order": 0.0,
+    "allocated": 0.0,
+    "available": 173.0,
+    "days_of_supply": 22.08123455463328
+  }
+]

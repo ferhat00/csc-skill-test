@@ -1,0 +1,281 @@
+[
+  {
+    "id": "c35b39f5-431f-4ba1-bde0-3f5c065e92cb",
+    "name": "Springfield Pilot Plant - Reactor 1",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "line_type": "reactor",
+    "capacity_per_day": 10.0,
+    "unit": "kg",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "387b8dda-c034-4624-8294-554bc9525a1b",
+    "name": "Springfield Pilot Plant - Formulation 2",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "line_type": "formulation",
+    "capacity_per_day": 500.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "a8ff05b1-a6f2-42f7-ad7c-0b30724394e0",
+    "name": "Springfield Pilot Plant - Reactor 3",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "line_type": "reactor",
+    "capacity_per_day": 10.0,
+    "unit": "kg",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "6d3a574a-55b8-4606-9062-c854ea7f273d",
+    "name": "Springfield Pilot Plant - Formulation 4",
+    "location_id": "90d5885c-57cb-47a0-a0a7-f54c93beeae8",
+    "line_type": "formulation",
+    "capacity_per_day": 500.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "702dd94d-78f5-4c3f-8cde-ed12df242820",
+    "name": "Basel Pilot Plant - Reactor 1",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "line_type": "reactor",
+    "capacity_per_day": 10.0,
+    "unit": "kg",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "4be40ec6-5c60-4b58-a16e-566da0e1a71f",
+    "name": "Basel Pilot Plant - Formulation 2",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "line_type": "formulation",
+    "capacity_per_day": 500.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "83c0cf96-9f4c-4e1a-8d54-2a5ec4bc3b1a",
+    "name": "Basel Pilot Plant - Reactor 3",
+    "location_id": "2d0f24cc-eed4-4f80-ad0c-b414e381f01d",
+    "line_type": "reactor",
+    "capacity_per_day": 10.0,
+    "unit": "kg",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "b6749679-4eb6-4f7b-9fe9-a2d3fcec13b5",
+    "name": "US Regional Depot - Packaging 1",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "6f9a7dea-e599-404a-8bb1-0bd07bb09c05",
+    "name": "US Regional Depot - Packaging 2",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "bc314208-0062-4479-bbfa-74cb6dee712c",
+    "name": "US Regional Depot - Packaging 3",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "d592547f-e6f8-4135-81ef-146489365efb",
+    "name": "US Regional Depot - Labeling 1",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "3b3c8ea8-719f-485c-aaf7-83a4f8ecc3a7",
+    "name": "US Regional Depot - Labeling 2",
+    "location_id": "02e3e52d-dc52-4c8f-a579-5c7b7e49ee6c",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "418555f2-18aa-4b28-bfdf-4209aaa10207",
+    "name": "EU Regional Depot - Packaging 1",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "717929c6-9b7b-4b12-be56-5a404f622535",
+    "name": "EU Regional Depot - Packaging 2",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "a10f9c4c-3172-4c02-988d-7dc2c5c0b269",
+    "name": "EU Regional Depot - Packaging 3",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "5e2d2bad-4fab-4621-be7c-f1c9625088b0",
+    "name": "EU Regional Depot - Packaging 4",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "6c530e67-6784-4644-a66d-4eb82fd88d4c",
+    "name": "EU Regional Depot - Labeling 1",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "8edd04cd-ce1d-40be-ae02-2896580626b5",
+    "name": "EU Regional Depot - Labeling 2",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "036b6570-2701-4e09-9e75-02db06f098cf",
+    "name": "EU Regional Depot - Labeling 3",
+    "location_id": "5c1b7d92-5566-420e-9ecb-8576dae57d1e",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "018f1796-3226-49bc-89b4-58e767a15d2f",
+    "name": "APAC Regional Depot - Packaging 1",
+    "location_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "b606c399-5335-42c7-b0dd-ac0c3d1eecfc",
+    "name": "APAC Regional Depot - Packaging 2",
+    "location_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "ef37493f-19e3-4ae4-9196-0b16a283fb2d",
+    "name": "APAC Regional Depot - Labeling 1",
+    "location_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "06de3e8c-7cf9-42b8-9d16-f15000d719cc",
+    "name": "APAC Regional Depot - Labeling 2",
+    "location_id": "c155c35c-424e-41ce-868b-e96c9a9fc389",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "2d0a8f6b-4a34-4a35-9ffb-69f0e6868ebd",
+    "name": "US East Local Depot - Packaging 1",
+    "location_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "5838e605-a04f-443e-8e88-ca5e8eb8d5d4",
+    "name": "US East Local Depot - Labeling 1",
+    "location_id": "12f6eb9f-2281-4093-bc72-100c79203b9a",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "79d53b37-b61f-4b7b-a876-957c3ae673ae",
+    "name": "EU Central Local Depot - Packaging 1",
+    "location_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "459be9c8-26c5-4713-8989-86b3730e2aed",
+    "name": "EU Central Local Depot - Packaging 2",
+    "location_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "25e84b79-a17f-43fc-81dc-d5f109d9a17c",
+    "name": "EU Central Local Depot - Labeling 1",
+    "location_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "8eae1f81-b0df-4b3e-82ae-39091f848294",
+    "name": "EU Central Local Depot - Labeling 2",
+    "location_id": "662d61d0-5313-42ea-98e7-0d286d263b69",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "29c920a7-f434-4f40-a260-572435f741e4",
+    "name": "APAC East Local Depot - Packaging 1",
+    "location_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "line_type": "packaging",
+    "capacity_per_day": 1000.0,
+    "unit": "units",
+    "available_days_per_month": 22
+  },
+  {
+    "id": "c247f178-cba4-412c-a22a-83f49f1620ef",
+    "name": "APAC East Local Depot - Labeling 1",
+    "location_id": "fa10eb57-0716-40e5-87cf-fe0f9697d0f9",
+    "line_type": "labeling",
+    "capacity_per_day": 2000.0,
+    "unit": "kits",
+    "available_days_per_month": 22
+  }
+]
