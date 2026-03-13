@@ -1,4 +1,4 @@
-"""Base agent class with the Anthropic tool-use agentic loop."""
+"""Base agent class with a LiteLLM-powered tool-use agentic loop."""
 
 from __future__ import annotations
 
@@ -8,13 +8,16 @@ import traceback
 from abc import ABC, abstractmethod
 from typing import Any
 
-import anthropic
+import litellm
 from pydantic import BaseModel
 from rich.console import Console
 
 from csc.orchestrator.state import SharedState
 
 console = Console()
+
+# Suppress LiteLLM's verbose logging
+litellm.suppress_debug_info = True
 
 
 class BaseAgent(ABC):
@@ -29,12 +32,10 @@ class BaseAgent(ABC):
 
     def __init__(
         self,
-        client: anthropic.Anthropic,
         model: str,
         state: SharedState,
         max_turns: int = 20,
     ):
-        self.client = client
         self.model = model
         self.state = state
         self.max_turns = max_turns
@@ -53,7 +54,7 @@ class BaseAgent(ABC):
 
     @abstractmethod
     def get_tools(self) -> list[dict]:
-        """Return Anthropic tool definitions for this agent."""
+        """Return tool definitions in Anthropic format (converted internally to LiteLLM format)."""
         ...
 
     @abstractmethod
@@ -77,44 +78,38 @@ class BaseAgent(ABC):
         ...
 
     def run(self) -> BaseModel:
-        """Execute the agentic loop: call Claude with tools until it produces a final answer."""
+        """Execute the agentic loop using LiteLLM until the agent produces a final answer."""
         self.state.log_event(self.agent_name, "started", f"{self.agent_name} agent starting")
         console.print(f"\n[bold blue]{'='*60}[/]")
         console.print(f"[bold blue]  {self.agent_name.replace('_', ' ').title()} Agent[/]")
         console.print(f"[bold blue]{'='*60}[/]\n")
 
-        # Build initial context from shared state
-        context_msg = self._build_context_message()
-        self.conversation = [{"role": "user", "content": context_msg}]
+        self.conversation = [
+            {"role": "system", "content": self.get_system_prompt()},
+            {"role": "user", "content": self._build_context_message()},
+        ]
 
         tool_handlers = self.get_tool_handlers()
-        tools = self.get_tools()
+        litellm_tools = self._to_litellm_tools(self.get_tools())
 
         for turn in range(self.max_turns):
             console.print(f"  [dim]Turn {turn + 1}/{self.max_turns}...[/]")
 
             response = self._call_with_retry(
                 model=self.model,
-                system=self.get_system_prompt(),
                 messages=self.conversation,
-                tools=tools,
+                tools=litellm_tools,
                 max_tokens=8192,
             )
 
-            # Process the response
-            assistant_content = response.content
-            self.conversation.append({"role": "assistant", "content": assistant_content})
+            message = response.choices[0].message
+            tool_calls = message.tool_calls or []
 
-            # Check if there are tool uses
-            tool_uses = [block for block in assistant_content if block.type == "tool_use"]
-
-            if not tool_uses:
+            if not tool_calls:
                 # Agent is done — extract final text
-                text_blocks = [block.text for block in assistant_content if block.type == "text"]
-                final_text = "\n".join(text_blocks)
+                final_text = message.content or ""
                 console.print(f"  [green]Agent completed after {turn + 1} turns[/]")
 
-                # Parse and store output
                 try:
                     output = self.parse_output(final_text)
                     self.state.set(self.get_output_key(), output)
@@ -130,19 +125,30 @@ class BaseAgent(ABC):
                         f"Failed to parse output: {e}",
                     )
                     console.print(f"  [red]Parse error: {e}[/]")
-                    # Ask the agent to fix its output
+                    self.conversation.append({"role": "assistant", "content": final_text})
                     self.conversation.append({
                         "role": "user",
-                        "content": f"Your output could not be parsed. Error: {e}\n\nPlease provide your final output as valid JSON that matches the expected schema.",
+                        "content": (
+                            f"Your output could not be parsed. Error: {e}\n\n"
+                            "Please provide your final output as valid JSON that matches the expected schema."
+                        ),
                     })
                     continue
 
-            # Execute tool calls
-            tool_results = []
-            for tool_use in tool_uses:
-                tool_name = tool_use.name
-                tool_input = tool_use.input
+            # Append the assistant message (with tool calls) to the conversation
+            asst_msg: dict[str, Any] = {"role": "assistant", "content": message.content}
+            asst_msg["tool_calls"] = [tc.model_dump() for tc in tool_calls]
+            self.conversation.append(asst_msg)
+
+            # Execute each tool call and append results
+            for tc in tool_calls:
+                tool_name = tc.function.name
                 console.print(f"    [yellow]Tool: {tool_name}[/]")
+
+                try:
+                    tool_input = json.loads(tc.function.arguments)
+                except json.JSONDecodeError:
+                    tool_input = {}
 
                 self.state.log_event(
                     self.agent_name, "tool_call",
@@ -154,38 +160,57 @@ class BaseAgent(ABC):
                 if handler:
                     try:
                         result = handler(**tool_input)
-                        result_str = json.dumps(result, default=str) if not isinstance(result, str) else result
+                        result_str = (
+                            json.dumps(result, default=str)
+                            if not isinstance(result, str)
+                            else result
+                        )
                     except Exception as e:
                         result_str = json.dumps({"error": str(e), "traceback": traceback.format_exc()})
                 else:
                     result_str = json.dumps({"error": f"Unknown tool: {tool_name}"})
 
-                tool_results.append({
-                    "type": "tool_result",
-                    "tool_use_id": tool_use.id,
-                    "content": result_str[:10000],  # cap result size
+                self.conversation.append({
+                    "role": "tool",
+                    "tool_call_id": tc.id,
+                    "content": result_str[:10000],
                 })
-
-            self.conversation.append({"role": "user", "content": tool_results})
 
         # Max turns exhausted
         console.print(f"  [red]Max turns ({self.max_turns}) exhausted[/]")
         self.state.log_event(self.agent_name, "error", "Max turns exhausted")
         raise RuntimeError(f"{self.agent_name} exceeded maximum turns ({self.max_turns})")
 
-    def _call_with_retry(self, **kwargs) -> anthropic.types.Message:
-        """Call the Anthropic API with exponential backoff on rate limit errors."""
+    def _to_litellm_tools(self, anthropic_tools: list[dict]) -> list[dict]:
+        """Convert Anthropic-style tool definitions to LiteLLM/OpenAI format."""
+        return [
+            {
+                "type": "function",
+                "function": {
+                    "name": t["name"],
+                    "description": t.get("description", ""),
+                    "parameters": t.get("input_schema", {"type": "object", "properties": {}}),
+                },
+            }
+            for t in anthropic_tools
+        ]
+
+    def _call_with_retry(self, **kwargs) -> litellm.ModelResponse:
+        """Call LiteLLM with exponential backoff on rate limit errors."""
         max_retries = 5
-        delay = 60  # seconds for first retry
+        delay = 60
         for attempt in range(max_retries):
             try:
-                return self.client.messages.create(**kwargs)
-            except anthropic.RateLimitError as e:
+                return litellm.completion(**kwargs)
+            except litellm.RateLimitError as e:
                 if attempt == max_retries - 1:
                     raise
-                console.print(f"  [yellow]Rate limit hit — waiting {delay}s before retry {attempt + 2}/{max_retries}...[/]")
+                console.print(
+                    f"  [yellow]Rate limit hit — waiting {delay}s before retry "
+                    f"{attempt + 2}/{max_retries}...[/]"
+                )
                 time.sleep(delay)
-                delay = min(delay * 2, 300)  # cap at 5 minutes
+                delay = min(delay * 2, 300)
 
     def _build_context_message(self) -> str:
         """Pull relevant data from SharedState and format as context for the agent."""
@@ -213,7 +238,6 @@ class BaseAgent(ABC):
             else:
                 serialized = value
 
-            # Truncate large datasets to avoid exceeding context
             json_str = json.dumps(serialized, default=str, indent=1)
             if len(json_str) > 30000:
                 json_str = json_str[:30000] + "\n... (truncated)"

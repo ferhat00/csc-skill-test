@@ -13,7 +13,10 @@
       "Bash(python -m csc --help)",
       "Bash(python -c \"from csc.cli import main; main\\([''--help'']\\)\")",
       "Bash(csc --help)",
-      "Bash(wc -l /c/Users/Ferhat/Documents/GitHub/csc-skill-test/src/csc/agents/*/prompts.py)"
+      "Bash(wc -l /c/Users/Ferhat/Documents/GitHub/csc-skill-test/src/csc/agents/*/prompts.py)",
+      "Bash(find /c/Users/Ferhat/Documents/GitHub/csc-skill-test -path */.venv -prune -o -path */.git -prune -o -path */__pycache__ -prune -o -type d -print)",
+      "Bash(python -m pip install -e \".[dev]\" --quiet)",
+      "Bash(python -c \"import litellm; import openai; print\\(''litellm:'', litellm.__version__\\); print\\(''openai:'', openai.__version__\\)\")"
     ]
   }
 }

@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import anthropic
 from rich.console import Console
 
 from csc.agents.demand_review.agent import DemandReviewAgent
@@ -40,7 +39,6 @@ class SupplyChainPipeline:
 
     def __init__(self, config: Config):
         self.config = config
-        self.client = anthropic.Anthropic(api_key=config.api_key)
         self.state = SharedState()
 
     def load_data(self, data_dir: Path | None = None) -> None:
@@ -70,7 +68,6 @@ class SupplyChainPipeline:
 
         agent_cls = AGENT_CLASSES[agent_name]
         agent = agent_cls(
-            client=self.client,
             model=self.config.model,
             state=self.state,
             max_turns=self.config.max_agent_turns,
