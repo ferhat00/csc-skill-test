@@ -50,7 +50,7 @@ class IndexMap:
 def build_inventory_obs(state: SharedState, current_month: date | None = None) -> tuple[np.ndarray, IndexMap]:
     """Build observation for inventory agent.
 
-    Returns (obs_vector, index_map) where index_map maps position index -> (material_id, location_id).
+    Returns (obs_vector, index_map) where index_map maps position index -> material_id.
     """
     obs = np.zeros(MAX_INVENTORY_POSITIONS * INV_FEATURES, dtype=np.float32)
     imap = IndexMap()
@@ -66,7 +66,7 @@ def build_inventory_obs(state: SharedState, current_month: date | None = None) -
         obs[base + 4] = pos.available
         obs[base + 5] = pos.days_of_supply
         # Estimate monthly demand from demand plan if available
-        obs[base + 6] = _estimate_demand(state, pos.material_id, pos.location_id)
+        obs[base + 6] = _estimate_demand(state, pos.material_id)
         # Estimate lead time from material specs
         obs[base + 7] = _estimate_lead_time(state, pos.material_id)
 
@@ -76,7 +76,8 @@ def build_inventory_obs(state: SharedState, current_month: date | None = None) -
 def build_demand_obs(state: SharedState, current_month: date | None = None) -> tuple[np.ndarray, IndexMap]:
     """Build observation for demand forecasting agent.
 
-    Returns (obs_vector, trial_site_map) where map[i] -> (trial_id, site_id).
+    Returns (obs_vector, trial_site_map) where trial_site_map[i] -> trial_id for the
+    i-th trial-site pair in iteration order (outer: trials, inner: sites).
     """
     obs = np.zeros(MAX_TRIAL_SITE_PAIRS * TSP_FEATURES, dtype=np.float32)
     imap = IndexMap()
@@ -84,19 +85,20 @@ def build_demand_obs(state: SharedState, current_month: date | None = None) -> t
     therapy_map = {"oncology": 0, "immunology": 1, "neuroscience": 2, "rare_disease": 3}
     phase_map = {"phase_i": 1, "phase_ii": 2, "phase_iii": 3}
 
+    # Pre-index forecasts by (trial_id, site_id) for O(1) lookup
+    forecast_index: dict[tuple, list] = {}
+    for f in state.enrollment_forecasts:
+        key = (f.trial_id, f.site_id)
+        forecast_index.setdefault(key, []).append(f)
+
     idx = 0
     for trial in state.trials:
         for site_id in trial.sites:
             if idx >= MAX_TRIAL_SITE_PAIRS:
                 break
 
-            # Find enrollment forecasts for this trial-site pair
-            forecasts = [
-                f for f in state.enrollment_forecasts
-                if f.trial_id == trial.id and f.site_id == site_id
-            ]
+            forecasts = forecast_index.get((trial.id, site_id), [])
 
-            # Use the UUID pair as a composite key (store trial_id)
             imap.add(idx, trial.id)
 
             base = idx * TSP_FEATURES
@@ -202,8 +204,8 @@ def build_capacity_obs(state: SharedState) -> tuple[np.ndarray, IndexMap, IndexM
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
-def _estimate_demand(state: SharedState, material_id: UUID, location_id: UUID) -> float:
-    """Estimate monthly demand for a material at a location from demand plan."""
+def _estimate_demand(state: SharedState, material_id: UUID) -> float:
+    """Estimate average monthly demand for a material from the demand plan."""
     if state.demand_plan is None:
         return 0.0
     matching = [

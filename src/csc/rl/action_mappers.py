@@ -242,6 +242,20 @@ def map_capacity_action(
         exp_row = np.exp(row - np.max(row))
         alloc[loc_i] = exp_row / (exp_row.sum() + 1e-8)
 
+    # Pre-compute per-trial monthly demand for utilization calculation.
+    # Factor of 2 converts enrolled patients to kit demand (rough: 2 kits/patient).
+    trial_monthly_demands = np.array(
+        [t.planned_enrollment * 2 / 12 for t in state.trials[:n_trials]],
+        dtype=float,
+    )
+
+    # Build a quick capacity lookup: loc_id -> monthly_capacity
+    loc_capacity: dict[UUID, float] = {}
+    for p in state.plants:
+        loc_capacity[p.id] = p.annual_capacity_kg / 12
+    for d in state.depots:
+        loc_capacity[d.id] = float(d.storage_capacity_pallets)
+
     depot_calendars: list[CapacityCalendar] = []
     plant_calendars: list[CapacityCalendar] = []
     all_feasible = True
@@ -251,7 +265,11 @@ def map_capacity_action(
 
     for loc_i in range(n_locations):
         loc_id = loc_map.uuid(loc_i)
-        util = float(alloc[loc_i].sum())
+
+        # Utilization = demand apportioned to this location / location capacity
+        demand_at_loc = float(np.dot(alloc[loc_i], trial_monthly_demands))
+        cap = loc_capacity.get(loc_id, 1.0)
+        util = demand_at_loc / max(cap, 1.0)
         if util > 1.0:
             all_feasible = False
 
@@ -271,7 +289,7 @@ def map_capacity_action(
             location_name=loc_name,
             month=now,
             utilization_pct=min(util, 1.0) * 100,
-            available_slots=max(0, int((1.0 - util) * 22)),
+            available_slots=max(0, int((1.0 - min(util, 1.0)) * 22)),
             reasoning=[f"RL-allocated {util:.1%} utilization across {n_trials} trials"],
         )
 

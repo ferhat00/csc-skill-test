@@ -8,7 +8,7 @@ from typing import Any
 import numpy as np
 from gymnasium import spaces
 from pettingzoo import AECEnv
-from pettingzoo.utils import agent_selector
+from pettingzoo.utils import AgentSelector
 
 from csc.data.master_generator import MasterGenerator
 from csc.rl.envs.batch_env import BatchSchedulingEnv
@@ -61,12 +61,12 @@ class SupplyChainMultiAgentEnv(AECEnv):
         for agent_name in AGENT_ORDER:
             self._sub_envs[agent_name] = ENV_CLASSES[agent_name](seed=seed, horizon_months=horizon_months)
 
-        # Coordination vector: each agent appends a summary of its output
-        self._coord_dim = 16  # 4 floats per agent
+        # Coordination vector: each agent appends a summary of its output (4 floats per agent)
+        self._coord_dim = 4
         self._coord_vector = np.zeros(len(AGENT_ORDER) * self._coord_dim, dtype=np.float32)
 
         self._step_count = 0
-        self._agent_selector = agent_selector(self.agents)
+        self._agent_selector = AgentSelector(self.agents)
         self.agent_selection = self._agent_selector.reset()
 
         # Per-agent tracking
@@ -83,7 +83,7 @@ class SupplyChainMultiAgentEnv(AECEnv):
         sub_obs = self._sub_envs[agent].observation_space
         coord_size = len(AGENT_ORDER) * self._coord_dim
         total_dim = sub_obs.shape[0] + coord_size
-        return spaces.Box(low=0.0, high=1e6, shape=(total_dim,), dtype=np.float32)
+        return spaces.Box(low=-np.inf, high=np.inf, shape=(total_dim,), dtype=np.float32)
 
     @functools.lru_cache(maxsize=None)
     def action_space(self, agent: str) -> spaces.Space:
@@ -93,7 +93,7 @@ class SupplyChainMultiAgentEnv(AECEnv):
         episode_seed = seed if seed is not None else self._seed
 
         self.agents = list(AGENT_ORDER)
-        self._agent_selector = agent_selector(self.agents)
+        self._agent_selector = AgentSelector(self.agents)
         self.agent_selection = self._agent_selector.reset()
 
         self._coord_vector = np.zeros(len(AGENT_ORDER) * self._coord_dim, dtype=np.float32)

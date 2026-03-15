@@ -96,18 +96,23 @@ class CapacityAllocationEnv(gym.Env):
             exp_row = np.exp(row - np.max(row))
             alloc[loc_i] = exp_row / (exp_row.sum() + 1e-8)
 
-        # Compute utilization per location
-        utilization = alloc.sum(axis=1)
-
         # Update trial inventory based on allocation and demand noise
         demand_noise = 1.0 + rng.normal(0, 0.15, self._n_trials)
         actual_demand = self._trial_demand[:self._n_trials] * np.maximum(demand_noise, 0.1) / 12
 
-        # Capacity allocated to each trial -> production
+        # Compute utilization as actual demand served per location vs capacity
+        utilization = np.zeros(self._n_locations, dtype=np.float32)
+        for loc_i in range(self._n_locations):
+            cap = self._loc_capacities[loc_i]
+            if cap > 0:
+                demand_at_loc = float(np.dot(alloc[loc_i, :self._n_trials], actual_demand))
+                utilization[loc_i] = demand_at_loc / cap
+
+        # Capacity allocated to each trial -> production (alloc fraction * location capacity)
         trial_production = np.zeros(self._n_trials)
         for loc_i in range(self._n_locations):
             for trl_i in range(self._n_trials):
-                trial_production[trl_i] += alloc[loc_i, trl_i] * self._loc_capacities[loc_i] / self._n_trials
+                trial_production[trl_i] += alloc[loc_i, trl_i] * self._loc_capacities[loc_i]
 
         self._trial_inventory[:self._n_trials] += trial_production
         self._trial_inventory[:self._n_trials] -= np.minimum(
