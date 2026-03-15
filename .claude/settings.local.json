@@ -23,7 +23,10 @@
       "Bash(python -m csc.cli run --help)",
       "Bash(python -m csc.cli train --help)",
       "Bash(python -m pip install -e \".[rl]\")",
-      "Bash(python -m csc.cli run --all --method rl --output-dir reports_rl)"
+      "Bash(python -m csc.cli run --all --method rl --output-dir reports_rl)",
+      "Bash(python -c \"from csc.bdi.base_agent import BaseBDIAgent; from csc.bdi.agents.demand_agent import DemandBDIAgent; from csc.bdi.agents.portfolio_agent import PortfolioBDIAgent; from csc.bdi.agents.supply_agent import SupplyBDIAgent; from csc.bdi.agents.depot_agent import DepotCapacityBDIAgent; from csc.bdi.agents.plant_agent import PlantCapacityBDIAgent; from csc.orchestrator.bdi_pipeline import BDISupplyChainPipeline; print\\(''All BDI imports successful''\\)\")",
+      "Bash(python -m csc.cli run --all --method bdi)",
+      "Bash(python -c \"import sys,json; nb=json.load\\(sys.stdin\\); [print\\(f''''Cell {i} \\({c[\"\"cell_type\"\"]}\\): {c[\"\"source\"\"][0][:120] if c[\"\"source\"\"] else \"\"\\(empty\\)\"\"}''''\\) for i,c in enumerate\\(nb[''''cells'''']\\)]\")"
     ]
   }
 }
