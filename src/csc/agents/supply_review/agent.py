@@ -35,12 +35,49 @@ class SupplyReviewAgent(BaseAgent):
     def get_output_key(self) -> str:
         return "supply_plan"
 
+    def get_compile_tool_name(self) -> str:
+        return "build_supply_plan"
+
     def parse_output(self, raw: str) -> BaseModel:
-        json_str = _extract_json(raw)
-        data = json.loads(json_str)
+        # Prefer the plan stored by build_supply_plan tool — it contains all
+        # batch data without relying on the LLM to reproduce it verbatim.
+        cached = self.state._supply_plan_raw
+
+        if cached is not None:
+            src = cached
+        else:
+            json_str = _extract_json(raw)
+            src = json.loads(json_str)
+
+        # Overlay reasoning/shortfall_alerts from LLM text when available,
+        # falling back to whatever the cache or src already has.
+        try:
+            llm_json_str = _extract_json(raw)
+            llm_data = json.loads(llm_json_str)
+        except Exception:
+            llm_data = {}
+
+        raw_reasoning = (
+            llm_data.get("reasoning")
+            or src.get("reasoning")
+            or src.get("notes")
+            or []
+        )
+        if isinstance(raw_reasoning, str):
+            reasoning: list[str] = [s.strip() for s in raw_reasoning.split(". ") if s.strip()]
+        elif isinstance(raw_reasoning, list):
+            reasoning = raw_reasoning
+        else:
+            reasoning = []
+
+        shortfall_alerts = (
+            llm_data.get("shortfall_alerts")
+            or src.get("shortfall_alerts")
+            or []
+        )
 
         batches = []
-        for b in data.get("batches", []):
+        for b in src.get("batches", []):
             batches.append(Batch(
                 material_id=b.get("material_id", "00000000-0000-0000-0000-000000000000"),
                 stage=SupplyChainStage(b.get("stage", "ds")),
@@ -50,15 +87,17 @@ class SupplyReviewAgent(BaseAgent):
                 status=BatchStatus.PLANNED,
                 planned_start=date.fromisoformat(b.get("planned_start", str(date.today()))),
                 planned_end=date.fromisoformat(b.get("planned_end", str(date.today()))),
-                expiry_date=date.fromisoformat(b.get("expiry_date", str(date.today().replace(year=date.today().year + 2)))),
+                expiry_date=date.fromisoformat(
+                    b.get("expiry_date", str(date.today().replace(year=date.today().year + 2)))
+                ),
                 location_id=b.get("location_id", "00000000-0000-0000-0000-000000000000"),
             ))
 
         return SupplyPlan(
             generated_at=datetime.now(),
-            horizon_start=date.fromisoformat(data.get("horizon_start", str(date.today()))),
-            horizon_end=date.fromisoformat(data.get("horizon_end", str(date.today()))),
+            horizon_start=date.fromisoformat(src.get("horizon_start", str(date.today()))),
+            horizon_end=date.fromisoformat(src.get("horizon_end", str(date.today()))),
             batches=batches,
-            shortfall_alerts=data.get("shortfall_alerts", []),
-            reasoning=data.get("reasoning", data.get("notes", "").split(". ") if isinstance(data.get("notes"), str) else []),
+            shortfall_alerts=shortfall_alerts,
+            reasoning=reasoning,
         )

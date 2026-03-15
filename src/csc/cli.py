@@ -16,8 +16,13 @@ console = Console()
 def main(ctx: click.Context, verbose: bool) -> None:
     """Clinical Supply Chain Multi-Agent Modeling System.
 
-    Model the end-to-end clinical supply chain using 5 autonomous LLM-powered agents:
-    Demand Review > Portfolio Review > Supply Review > Depot Capacity > Plant Capacity.
+    Model the end-to-end clinical supply chain using autonomous agents.
+
+    Two methods available (set CSC_METHOD in .env or use --method flag):
+
+    \b
+    LLM agents (default): 5 LLM-powered agents via LiteLLM
+    RL agents:            4 PPO-trained reinforcement learning agents
     """
     ctx.ensure_object(dict)
     ctx.obj["verbose"] = verbose
@@ -49,16 +54,19 @@ def generate(trials: int, sites: int, seed: int, output_dir: str) -> None:
 
 
 @main.command()
-@click.option("--agent", "agent_name", default=None, help="Run a specific agent (demand_review, portfolio_review, supply_review, depot_capacity, plant_capacity)")
+@click.option("--agent", "agent_name", default=None, help="Run a specific agent")
 @click.option("--all", "run_all", is_flag=True, help="Run the full pipeline")
 @click.option("--data-dir", default="src/csc/data/output", type=click.Path(exists=True), help="Path to synthetic data")
 @click.option("--output-dir", default="reports", type=click.Path(), help="Where to write reports")
-@click.option("--model", default=None, help="Claude model to use (overrides .env)")
+@click.option("--model", default=None, help="Claude model to use (overrides .env, LLM method only)")
+@click.option("--method", default=None, type=click.Choice(["llm", "rl"]), help="Agent method: llm or rl (overrides .env CSC_METHOD)")
 @click.option("--format", "fmt", default="both", type=click.Choice(["csv", "json", "both"]), help="Report format")
-def run(agent_name: str | None, run_all: bool, data_dir: str, output_dir: str, model: str | None, fmt: str) -> None:
-    """Run agents (full pipeline or individual)."""
+def run(agent_name: str | None, run_all: bool, data_dir: str, output_dir: str, model: str | None, method: str | None, fmt: str) -> None:
+    """Run agents (full pipeline or individual).
+
+    Use --method to choose between LLM-based agents and RL-based agents.
+    """
     from csc.config import Config
-    from csc.orchestrator.pipeline import SupplyChainPipeline
     from csc.orchestrator.resolver import resolve_conflicts
     from csc.reports.terminal import print_summary
     from csc.reports.writer import write_reports
@@ -68,17 +76,40 @@ def run(agent_name: str | None, run_all: bool, data_dir: str, output_dir: str, m
         raise SystemExit(1)
 
     config = Config.from_env()
-    if model:
-        config = Config(api_key=config.api_key, model=model, max_agent_turns=config.max_agent_turns)
+    active_method = method or config.method
 
-    pipeline = SupplyChainPipeline(config)
-    pipeline.load_data(Path(data_dir))
+    if active_method == "rl":
+        from csc.orchestrator.rl_pipeline import RLSupplyChainPipeline
 
-    if run_all:
-        pipeline.run_full()
-        resolve_conflicts(pipeline.state)
+        pipeline = RLSupplyChainPipeline(config)
+        pipeline.load_data(Path(data_dir))
+
+        if run_all:
+            pipeline.run_full()
+            resolve_conflicts(pipeline.state)
+        else:
+            pipeline.run_agent(agent_name)
     else:
-        pipeline.run_agent(agent_name)
+        from csc.orchestrator.pipeline import SupplyChainPipeline
+
+        if model:
+            config = Config(
+                model=model,
+                max_agent_turns=config.max_agent_turns,
+                anthropic_api_key=config.anthropic_api_key,
+                openai_api_key=config.openai_api_key,
+                gemini_api_key=config.gemini_api_key,
+                nebius_api_key=config.nebius_api_key,
+            )
+
+        pipeline = SupplyChainPipeline(config)
+        pipeline.load_data(Path(data_dir))
+
+        if run_all:
+            pipeline.run_full()
+            resolve_conflicts(pipeline.state)
+        else:
+            pipeline.run_agent(agent_name)
 
     # Write reports
     out = Path(output_dir)
@@ -89,6 +120,24 @@ def run(agent_name: str | None, run_all: bool, data_dir: str, output_dir: str, m
 
     # Print terminal summary
     print_summary(pipeline.state)
+
+
+@main.command()
+@click.option("--agent", "agent_name", default=None, help="Train a specific RL agent (demand_forecast, capacity_allocation, batch_scheduling, inventory_safety_stock)")
+@click.option("--timesteps", default=None, type=int, help="Total training timesteps (overrides .env)")
+@click.option("--seed", default=None, type=int, help="Training random seed (overrides .env)")
+def train(agent_name: str | None, timesteps: int | None, seed: int | None) -> None:
+    """Train RL agents on synthetic supply chain data.
+
+    Trains one or all RL agents using PPO. Models are saved to CSC_RL_MODEL_DIR.
+    Requires the RL dependencies: pip install -e ".[rl]"
+    """
+    from csc.config import Config
+    from csc.rl.training.trainer import RLTrainer
+
+    config = Config.from_env()
+    trainer = RLTrainer(config)
+    trainer.train(agent_name=agent_name, total_timesteps=timesteps, seed=seed)
 
 
 @main.command()

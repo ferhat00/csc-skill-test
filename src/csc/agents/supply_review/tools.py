@@ -83,6 +83,9 @@ def create_tool_handlers(state: SharedState) -> dict:
     planned_batches: list[dict] = []
     planned_orders: list[dict] = []
 
+    # Reset any cached plan from a previous run of this agent.
+    state._supply_plan_raw = None
+
     def get_demand_summary() -> dict:
         if not state.demand_plan:
             return {"error": "No demand plan available. Run demand review first."}
@@ -242,7 +245,7 @@ def create_tool_handlers(state: SharedState) -> dict:
         if not planned_batches:
             shortfalls.append("No batches were scheduled — supply plan may be incomplete")
 
-        return {
+        plan = {
             "generated_at": datetime.now().isoformat(),
             "horizon_start": horizon_start,
             "horizon_end": horizon_end,
@@ -251,6 +254,22 @@ def create_tool_handlers(state: SharedState) -> dict:
             "total_batches": len(planned_batches),
             "shortfall_alerts": shortfalls,
             "notes": notes,
+        }
+
+        # Persist the compiled plan on shared state so parse_output can use it
+        # directly, avoiding the need for the LLM to reproduce all batch data.
+        state._supply_plan_raw = plan
+
+        return {
+            "status": "supply_plan_compiled",
+            "total_batches": len(planned_batches),
+            "horizon_start": horizon_start,
+            "horizon_end": horizon_end,
+            "shortfall_alerts": shortfalls,
+            "message": (
+                "Supply plan compiled and stored. Output a brief JSON with "
+                "horizon_start, horizon_end, shortfall_alerts, and reasoning only."
+            ),
         }
 
     return {

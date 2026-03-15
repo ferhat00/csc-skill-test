@@ -16,7 +16,14 @@
       "Bash(wc -l /c/Users/Ferhat/Documents/GitHub/csc-skill-test/src/csc/agents/*/prompts.py)",
       "Bash(find /c/Users/Ferhat/Documents/GitHub/csc-skill-test -path */.venv -prune -o -path */.git -prune -o -path */__pycache__ -prune -o -type d -print)",
       "Bash(python -m pip install -e \".[dev]\" --quiet)",
-      "Bash(python -c \"import litellm; import openai; print\\(''litellm:'', litellm.__version__\\); print\\(''openai:'', openai.__version__\\)\")"
+      "Bash(python -c \"import litellm; import openai; print\\(''litellm:'', litellm.__version__\\); print\\(''openai:'', openai.__version__\\)\")",
+      "Bash(ls -la /c/Users/Ferhat/Documents/GitHub/csc-skill-test/*.txt)",
+      "Bash(python -c \"from csc.config import Config; c = Config\\(\\); print\\(f''method={c.method}, rl_model_dir={c.rl_model_dir}''\\)\")",
+      "Bash(python -m csc.cli --help)",
+      "Bash(python -m csc.cli run --help)",
+      "Bash(python -m csc.cli train --help)",
+      "Bash(python -m pip install -e \".[rl]\")",
+      "Bash(python -m csc.cli run --all --method rl --output-dir reports_rl)"
     ]
   }
 }
