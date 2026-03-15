@@ -306,11 +306,16 @@ def map_capacity_action(
         trial_alloc = float(alloc[:, i].sum()) / max(n_locations, 1)
         ranked_trials.append({
             "trial_id": str(trial.id),
-            "protocol_number": trial.protocol_number,
+            "protocol": trial.protocol_number,
+            "therapy_area": trial.therapy_area.value,
+            "phase": trial.phase.value,
+            "planned_enrollment": trial.planned_enrollment,
             "priority_score": priority_map.get(trial.phase.value, 1),
             "capacity_allocation": round(trial_alloc, 3),
         })
     ranked_trials.sort(key=lambda t: t["priority_score"], reverse=True)
+    for i, r in enumerate(ranked_trials):
+        r["rank"] = i + 1
 
     portfolio_plan = PortfolioPlan(
         generated_at=datetime.now(),

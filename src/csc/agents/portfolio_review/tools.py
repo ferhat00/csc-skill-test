@@ -137,6 +137,7 @@ def create_tool_handlers(state: SharedState) -> dict:
                 "protocol": trial.protocol_number,
                 "therapy_area": trial.therapy_area.value,
                 "phase": trial.phase.value,
+                "planned_enrollment": trial.planned_enrollment,
                 "priority_score": round(total, 3),
                 "scores": {
                     "phase": round(phase_score, 2),

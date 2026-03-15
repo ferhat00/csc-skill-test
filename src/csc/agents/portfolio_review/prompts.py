@@ -29,7 +29,7 @@ You analyze the full portfolio of clinical trials to identify cross-trial intera
 ## Output
 Provide your final PortfolioPlan as a JSON object with:
 - generated_at: timestamp
-- ranked_trials: list of {protocol, priority_score, rank, rationale}
+- ranked_trials: list of {protocol, therapy_area, phase, planned_enrollment, priority_score, rank, rationale}
 - conflicts: list of {resource, trials_affected, severity, description}
 - synergies: list of {type, trials_involved, benefit, description}
 - resource_allocations: list of {resource_id, trial_protocol, allocation_pct}

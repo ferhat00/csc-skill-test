@@ -104,6 +104,8 @@ def get_tool_definitions() -> list[dict]:
 
 def create_tool_handlers(state: SharedState) -> dict:
     """Create tool handler functions bound to the shared state."""
+    # Reset any cached plan from a previous run of this agent.
+    state._demand_plan_raw = None
 
     def get_trial_summary() -> dict:
         trials = state.trials
@@ -291,14 +293,32 @@ def create_tool_handlers(state: SharedState) -> dict:
         horizon_start = min(all_months) if all_months else str(date.today())
         horizon_end = max(all_months) if all_months else str(date.today())
 
-        return {
+        plan = {
             "generated_at": datetime.now().isoformat(),
             "horizon_start": horizon_start,
             "horizon_end": horizon_end,
             "total_kit_demand": sum(d["quantity_with_overage"] for d in all_demands),
             "demand_by_trial": demand_by_trial,
-            "total_site_demand_records": len(all_demands),
+            "site_demands": all_demands,
             "notes": notes,
+        }
+
+        # Persist the compiled plan on shared state so parse_output can
+        # use it directly — the LLM never needs to reproduce the full
+        # site_demands array in its text response.
+        state._demand_plan_raw = plan
+
+        return {
+            "status": "demand_plan_compiled",
+            "total_kit_demand": plan["total_kit_demand"],
+            "demand_by_trial": demand_by_trial,
+            "total_site_demand_records": len(all_demands),
+            "horizon_start": horizon_start,
+            "horizon_end": horizon_end,
+            "message": (
+                "Demand plan compiled and stored. Output a brief JSON with "
+                "horizon_start, horizon_end, total_kit_demand, demand_by_trial, and assumptions only."
+            ),
         }
 
     return {
