@@ -34,7 +34,12 @@ class Config:
     def from_env(cls, dotenv_path: str | Path | None = None) -> Config:
         load_dotenv(dotenv_path or ".env")
 
-        method = os.environ.get("CSC_METHOD", "llm")
+        method = os.environ.get("CSC_METHOD", "llm").lower()
+        valid_methods = {"llm", "rl"}
+        if method not in valid_methods:
+            raise ValueError(
+                f"Invalid CSC_METHOD '{method}'. Must be one of: {', '.join(sorted(valid_methods))}"
+            )
 
         anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY", "")
         openai_api_key = os.environ.get("OPENAI_API_KEY", "")
