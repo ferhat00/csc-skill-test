@@ -16,7 +16,7 @@ class Config:
     data_dir: Path = field(default_factory=lambda: Path("src/csc/data/output"))
     report_dir: Path = field(default_factory=lambda: Path("reports"))
 
-    # Agent method: "llm" or "rl"
+    # Agent method: "llm", "rl", or "bdi"
     method: str = "llm"
 
     # RL-specific settings
@@ -35,7 +35,7 @@ class Config:
         load_dotenv(dotenv_path or ".env")
 
         method = os.environ.get("CSC_METHOD", "llm").lower()
-        valid_methods = {"llm", "rl"}
+        valid_methods = {"llm", "rl", "bdi"}
         if method not in valid_methods:
             raise ValueError(
                 f"Invalid CSC_METHOD '{method}'. Must be one of: {', '.join(sorted(valid_methods))}"

@@ -86,6 +86,9 @@ class SharedState:
         self._demand_plan_raw: dict | None = None
         self._supply_plan_raw: dict | None = None
 
+        # BDI replanning: capacity constraints injected by pipeline
+        self._bdi_capacity_constraints: list[str] | None = None
+
     def log_event(self, agent_name: str, event_type: str, message: str, data: dict | None = None) -> None:
         self.events.append(
             PipelineEvent(

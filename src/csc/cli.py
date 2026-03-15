@@ -18,11 +18,12 @@ def main(ctx: click.Context, verbose: bool) -> None:
 
     Model the end-to-end clinical supply chain using autonomous agents.
 
-    Two methods available (set CSC_METHOD in .env or use --method flag):
+    Three methods available (set CSC_METHOD in .env or use --method flag):
 
     \b
     LLM agents (default): 5 LLM-powered agents via LiteLLM
     RL agents:            4 PPO-trained reinforcement learning agents
+    BDI agents:           5 rule-based Belief-Desire-Intention agents
     """
     ctx.ensure_object(dict)
     ctx.obj["verbose"] = verbose
@@ -59,7 +60,7 @@ def generate(trials: int, sites: int, seed: int, output_dir: str) -> None:
 @click.option("--data-dir", default="src/csc/data/output", type=click.Path(exists=True), help="Path to synthetic data")
 @click.option("--output-dir", default="reports", type=click.Path(), help="Where to write reports")
 @click.option("--model", default=None, help="Claude model to use (overrides .env, LLM method only)")
-@click.option("--method", default=None, type=click.Choice(["llm", "rl"]), help="Agent method: llm or rl (overrides .env CSC_METHOD)")
+@click.option("--method", default=None, type=click.Choice(["llm", "rl", "bdi"]), help="Agent method: llm, rl, or bdi (overrides .env CSC_METHOD)")
 @click.option("--format", "fmt", default="both", type=click.Choice(["csv", "json", "both"]), help="Report format")
 def run(agent_name: str | None, run_all: bool, data_dir: str, output_dir: str, model: str | None, method: str | None, fmt: str) -> None:
     """Run agents (full pipeline or individual).
@@ -82,6 +83,17 @@ def run(agent_name: str | None, run_all: bool, data_dir: str, output_dir: str, m
         from csc.orchestrator.rl_pipeline import RLSupplyChainPipeline
 
         pipeline = RLSupplyChainPipeline(config)
+        pipeline.load_data(Path(data_dir))
+
+        if run_all:
+            pipeline.run_full()
+            resolve_conflicts(pipeline.state)
+        else:
+            pipeline.run_agent(agent_name)
+    elif active_method == "bdi":
+        from csc.orchestrator.bdi_pipeline import BDISupplyChainPipeline
+
+        pipeline = BDISupplyChainPipeline(config)
         pipeline.load_data(Path(data_dir))
 
         if run_all:
