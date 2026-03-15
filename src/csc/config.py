@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 @dataclass(frozen=True)
 class Config:
     model: str = "claude-sonnet-4-20250514"
-    max_agent_turns: int = 20
+    max_agent_turns: int = 30
     data_dir: Path = field(default_factory=lambda: Path("src/csc/data/output"))
     report_dir: Path = field(default_factory=lambda: Path("reports"))
 

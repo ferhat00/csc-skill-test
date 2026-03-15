@@ -82,6 +82,10 @@ class SharedState:
         # Event log
         self.events: list[PipelineEvent] = []
 
+        # Internal scratch-pads written by tool handlers, read by parse_output
+        self._demand_plan_raw: dict | None = None
+        self._supply_plan_raw: dict | None = None
+
     def log_event(self, agent_name: str, event_type: str, message: str, data: dict | None = None) -> None:
         self.events.append(
             PipelineEvent(

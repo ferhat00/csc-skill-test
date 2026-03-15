@@ -77,6 +77,14 @@ class BaseAgent(ABC):
         """Parse the agent's final text response into a structured output."""
         ...
 
+    def get_compile_tool_name(self) -> str | None:
+        """Return the name of the tool that compiles/stores the final output.
+
+        When overridden, the agentic loop will explicitly name this tool in its
+        wrap-up nudge so the model knows to call it before responding.
+        """
+        return None
+
     def run(self) -> BaseModel:
         """Execute the agentic loop using LiteLLM until the agent produces a final answer."""
         self.state.log_event(self.agent_name, "started", f"{self.agent_name} agent starting")
@@ -91,9 +99,30 @@ class BaseAgent(ABC):
 
         tool_handlers = self.get_tool_handlers()
         litellm_tools = self._to_litellm_tools(self.get_tools())
+        compile_tool = self.get_compile_tool_name()
+
+        wrap_up_threshold = max(self.max_turns - 3, 1)
 
         for turn in range(self.max_turns):
             console.print(f"  [dim]Turn {turn + 1}/{self.max_turns}...[/]")
+
+            # Nudge the agent to wrap up a few turns before the limit
+            if turn == wrap_up_threshold:
+                if compile_tool:
+                    compile_hint = (
+                        f" You MUST call `{compile_tool}` NOW to store your results "
+                        f"before giving your final response — do not skip this step."
+                    )
+                else:
+                    compile_hint = " If you have a compile/build tool available, call it now."
+                self.conversation.append({
+                    "role": "user",
+                    "content": (
+                        f"You have {self.max_turns - turn} turns remaining."
+                        + compile_hint
+                        + " Then respond with a brief JSON summary."
+                    ),
+                })
 
             response = self._call_with_retry(
                 model=self.model,
@@ -101,6 +130,11 @@ class BaseAgent(ABC):
                 tools=litellm_tools,
                 max_tokens=8192,
             )
+
+            if not response.choices:
+                console.print("  [red]Empty response from model — retrying...[/]")
+                self.state.log_event(self.agent_name, "warning", "Empty choices in response, retrying")
+                continue
 
             message = response.choices[0].message
             tool_calls = message.tool_calls or []
@@ -130,7 +164,9 @@ class BaseAgent(ABC):
                         "role": "user",
                         "content": (
                             f"Your output could not be parsed. Error: {e}\n\n"
-                            "Please provide your final output as valid JSON that matches the expected schema."
+                            "Please provide your final output as a valid, compact JSON object "
+                            "that matches the expected schema. "
+                            "Do NOT repeat large arrays (batches, orders) — a brief summary JSON is fine."
                         ),
                     })
                     continue
@@ -176,10 +212,94 @@ class BaseAgent(ABC):
                     "content": result_str[:10000],
                 })
 
-        # Max turns exhausted
-        console.print(f"  [red]Max turns ({self.max_turns}) exhausted[/]")
-        self.state.log_event(self.agent_name, "error", "Max turns exhausted")
-        raise RuntimeError(f"{self.agent_name} exceeded maximum turns ({self.max_turns})")
+        # Max turns exhausted — force a final answer without tools
+        console.print(f"  [yellow]Max turns ({self.max_turns}) reached — forcing final output...[/]")
+        self.state.log_event(self.agent_name, "warning", "Max turns exhausted, forcing final output")
+
+        # If a compile tool exists but was never called, invoke it directly now
+        # so that the cached plan is populated before we try to parse output.
+        if compile_tool and compile_tool in tool_handlers:
+            try:
+                console.print(f"  [yellow]Auto-invoking {compile_tool} before forced output...[/]")
+                tool_handlers[compile_tool]()
+            except Exception as e:
+                console.print(f"  [yellow]Auto-invoke of {compile_tool} failed: {e}[/]")
+
+        if compile_tool:
+            force_compile = (
+                f"The `{compile_tool}` tool has already been called to store your results. "
+            )
+        else:
+            force_compile = ""
+        self.conversation.append({
+            "role": "user",
+            "content": (
+                "You have reached the maximum number of turns. "
+                + force_compile
+                + "Stop using tools and immediately provide your final structured output as a compact JSON object "
+                "based on all the data you have gathered so far. "
+                "Do NOT include large arrays verbatim — keep the JSON as small as possible."
+            ),
+        })
+
+        response = self._call_with_retry(
+            model=self.model,
+            messages=self.conversation,
+            max_tokens=16384,
+        )
+
+        if not response.choices:
+            raise RuntimeError(f"{self.agent_name}: model returned empty response on forced final output")
+
+        final_text = response.choices[0].message.content or ""
+        console.print(f"  [yellow]Agent finished (forced) after {self.max_turns} turns[/]")
+
+        try:
+            output = self.parse_output(final_text)
+            self.state.set(self.get_output_key(), output)
+            self.state.log_event(
+                self.agent_name, "completed",
+                f"{self.agent_name} produced output (after max turns)",
+                {"output_key": self.get_output_key()},
+            )
+            return output
+        except Exception as first_err:
+            console.print(f"  [red]Failed to parse forced output: {first_err} — retrying JSON fix...[/]")
+            self.state.log_event(self.agent_name, "warning", f"Parse error on forced output, retrying: {first_err}")
+
+            # Ask the model to correct its own malformed JSON, no tools
+            self.conversation.append({"role": "assistant", "content": final_text})
+            self.conversation.append({
+                "role": "user",
+                "content": (
+                    f"Your JSON output has a syntax error: {first_err}\n\n"
+                    "Output ONLY a valid JSON object — no prose, no markdown fences, no comments. "
+                    "Start with {{ and end with }}."
+                ),
+            })
+
+            fix_response = self._call_with_retry(
+                model=self.model,
+                messages=self.conversation,
+                max_tokens=8192,
+            )
+            fixed_text = fix_response.choices[0].message.content or "" if fix_response.choices else ""
+
+            try:
+                output = self.parse_output(fixed_text)
+                self.state.set(self.get_output_key(), output)
+                self.state.log_event(
+                    self.agent_name, "completed",
+                    f"{self.agent_name} produced output (after JSON fix)",
+                    {"output_key": self.get_output_key()},
+                )
+                return output
+            except Exception as second_err:
+                console.print(f"  [red]Failed to parse fixed output: {second_err}[/]")
+                self.state.log_event(self.agent_name, "error", f"Parse error on fixed output: {second_err}")
+                raise RuntimeError(
+                    f"{self.agent_name}: max turns exhausted and failed to parse output after JSON fix: {second_err}"
+                )
 
     def _to_litellm_tools(self, anthropic_tools: list[dict]) -> list[dict]:
         """Convert Anthropic-style tool definitions to LiteLLM/OpenAI format."""
